@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /hub
+Sitemap: https://theharnessproject.org/sitemap.xml
