@@ -7,6 +7,7 @@
  * variable LILZ_MODEL overrides the model (default claude-sonnet-5-5).
  *
  * Contract with the app (MATCH Flow lib/lilz.ts):
+ *   GET  → { live: boolean } — the app shows its Live AI switch only when true
  *   POST { messages: [{ role: 'user' | 'guide', text }], planContext, memories: string[] }
  *   200  { reply, actions: [{ id, label }], remember: string[] }
  *   4xx/5xx { code } where code is no_model | bad_key | no_credit | busy | upstream | bad_request
@@ -103,7 +104,7 @@ function rateLimited(ip) {
 /* ---------------- helpers ---------------- */
 const CORS = {
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
   'Access-Control-Allow-Headers': 'content-type, apikey, authorization',
   'Access-Control-Max-Age': '86400',
 };
@@ -166,6 +167,9 @@ function cleanReply(input) {
 
 /* ---------------- handlers ---------------- */
 export const onRequestOptions = () => new Response(null, { status: 204, headers: CORS });
+
+/** Status check: tells the app whether to show the Live AI switch. Reveals nothing else. */
+export const onRequestGet = ({ env }) => json({ live: Boolean(env.ANTHROPIC_API_KEY) });
 
 export async function onRequestPost({ request, env }) {
   if (!env.ANTHROPIC_API_KEY) return fail('no_model', 503);
