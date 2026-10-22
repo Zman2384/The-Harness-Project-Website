@@ -1207,3 +1207,14 @@ section[id],div[id]{scroll-margin-top:84px}
 .legal-card:hover,.legal-card:focus-visible{border-color:var(--cyan)}
 .legal h2[id]{scroll-margin-top:90px}
 @media (max-width:560px){.legal-toc ol{columns:1}}
+/* CAPE Flow legal pages: cream Tactical Notebook skin */
+.skin-light .legal h2{font:600 26px/1.15 var(--cape-display);letter-spacing:0;color:var(--cape-ink)}
+.skin-light .legal p,.skin-light .legal li{color:var(--cape-ink)}
+.skin-light .legal .muted,.skin-light .legal-crumb{color:var(--cape-muted)}
+.skin-light .legal a{color:var(--cape-c-ink)}
+.skin-light .legal-toc,.skin-light .legal-more{background:#FFFDF6;border-color:var(--cape-line)}
+.skin-light .legal-toc-h{color:var(--cape-a-ink)}
+.legal-cards-cape-flow .legal-card{background:#FAF6EC;border-color:#E2D9C3}
+.legal-cards-cape-flow .legal-card b{color:#1D6F66}
+.legal-cards-cape-flow .legal-card span{color:#4E5A66}
+.legal-cards-cape-flow .legal-card:hover,.legal-cards-cape-flow .legal-card:focus-visible{border-color:#1D6F66}
