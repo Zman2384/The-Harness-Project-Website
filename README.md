@@ -13,3 +13,10 @@ Old links like theharnessproject.org/#/cape redirect to /cape automatically.
 Workers & Pages -> your project -> Settings -> Builds -> Connect to Git -> pick this repo.
 Framework preset: None. Build command: (leave empty). Build output directory: /
 Every push to main publishes in about a minute.
+
+## Lil Z live guide (`/api/lil-z`)
+`functions/api/lil-z.js` is a Cloudflare Pages Function that powers live replies in the MATCH Flow app.
+It deploys with the site. One-time setup: Workers & Pages -> this project -> Settings -> Variables and Secrets ->
+add a **Secret** `ANTHROPIC_API_KEY` (from console.anthropic.com), then redeploy. Optional variable `LILZ_MODEL`
+(default `claude-sonnet-5-5`). Without the key the app keeps using its on-device answers.
+Persona and rules: `functions/api/_lilz-persona.js`. Nothing is stored or logged.
