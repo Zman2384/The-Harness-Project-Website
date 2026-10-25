@@ -23,7 +23,7 @@
       if(!dl){fallback(blob,name);say(st,'Downloading '+name+'.');return;}
       dl.save({filename:name,data:blob}).then(function(){say(st,'Saved '+name+'.');},function(err){
         var c=err&&err.code;
-        if(c==='declined'){say(st,'Download cancelled.');}
+        if(c==='declined'){say(st,'Download canceled.');}
         else if(c==='rate_limited'){say(st,'Another download prompt is open. Try again in a moment.');}
         else{fallback(blob,name);say(st,'Downloading '+name+'.');}
       });
