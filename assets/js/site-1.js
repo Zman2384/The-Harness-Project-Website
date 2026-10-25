@@ -373,7 +373,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
 <p>Doxy-PEP (doxycycline post-exposure prophylaxis) is an antibiotic taken after sex to lower the chance of getting certain bacterial STIs.</p>
 <div class="callout"><p style="margin:0"><b>How it's used:</b> one 200 mg dose of doxycycline, taken as soon as possible and within 72 hours after oral, anal, or vaginal sex. Never more than 200 mg in 24 hours.</p></div>
 <ul>
-<li><b>What it reduces:</b> in large trials, syphilis and chlamydia by more than 70%, and gonorrhea by about 50%.</li>
+<li><b>What it reduces:</b> in large trials, syphilis and chlamydia by more than 70%. Early trials also showed partial protection against gonorrhea, but more recent data suggest that benefit has faded as resistance spreads. <i>(Updated October 25, 2026.)</i></li>
 <li><b>What it doesn't touch:</b> HIV, mpox, herpes, or HPV. Keep PrEP, vaccines, and condoms in your plan.</li>
 <li><b>Who it's recommended for:</b> CDC recommends it for gay and bisexual men and transgender women who've had syphilis, chlamydia, or gonorrhea in the past 12 months. If that's not you, ask your provider whether it fits your situation.</li>
 </ul>
@@ -753,17 +753,17 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<text x="82" y="160" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#1D6F66" letter-spacing="4">PLAN IT BEFORE YOU GO</text>';
     },
     doxy: function(){
-      var bars = [["SYPHILIS",">70%","#90B14B",0.78],["CHLAMYDIA",">70%","#6E99A3",0.74],["GONORRHEA","~50%","#FFC93C",0.5]], g = '';
+      var bars = [["SYPHILIS",">70%","#90B14B",0.78],["CHLAMYDIA",">70%","#6E99A3",0.74],["GONORRHEA","FADING","#FFC93C",0.18]], g = '';
       bars.forEach(function(b,i){ var y = 200 + i*96;
         g += '<text x="700" y="'+(y-12)+'" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#EDEFF4" letter-spacing="3">'+b[0]+'</text>' +
-             '<text x="1120" y="'+(y-12)+'" text-anchor="end" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="'+b[2]+'">'+b[1]+' LOWER</text>' +
+             '<text x="1120" y="'+(y-12)+'" text-anchor="end" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="'+b[2]+'">'+b[1]+(b[1]==='FADING'?'':' LOWER')+'</text>' +
              '<rect x="700" y="'+y+'" width="420" height="20" rx="3" fill="#15223A"/><rect x="700" y="'+y+'" width="'+(420*b[3]).toFixed(0)+'" height="20" rx="3" fill="'+b[2]+'"/>'; });
       return '<rect width="1200" height="675" fill="#05070D"/>' + starsSVG(1200,675,130,31) + floorSVG("#15223A") +
         '<g transform="rotate(-32 330 300)"><rect x="170" y="230" width="320" height="140" rx="70" fill="#0A0F1C" stroke="#3ED6E8" stroke-width="5"/>' +
         '<path d="M240 230h90v140h-90a70 70 0 0 1 0-140z" fill="#FF2E88"/><line x1="330" y1="236" x2="330" y2="364" stroke="#3ED6E8" stroke-width="4"/></g>' +
         '<text x="120" y="540" font-family="Bebas Neue, Impact, sans-serif" font-size="96" fill="#EDEFF4">DOXY-PEP</text>' +
         '<text x="124" y="580" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#FFC93C" letter-spacing="4">WITHIN 72 HOURS · 200 MG</text>' + g +
-        '<text x="700" y="120" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#A9B3C7" letter-spacing="4">IN LARGE TRIALS</text>' +
+        '<text x="700" y="120" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#A9B3C7" letter-spacing="4">WHAT IT LOWERS</text>' +
         '<image href="' + LANE_ART.CREST_ADULT + '" x="800" y="462" width="350" height="171"/>';
     },
     parentemail: function(){
