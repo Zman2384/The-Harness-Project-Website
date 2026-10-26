@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public API — The HARNESS Project</title>
+<meta name="description" content="Read-only public endpoints for theharnessproject.org. No accounts, no sign-ups.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#05070D">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;700&family=Space+Mono&display=swap">
+<style>
+:root{--bg:#05070D;--panel:#0A0F1C;--ink:#E8ECF4;--muted:#9AA6BC;--gold:#FFC93C;--cyan:#3ED6E8}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "DM Sans",sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 16px}
+h1{font:400 44px/1 "Bebas Neue",sans-serif;letter-spacing:1px;color:var(--gold);margin:0 0 12px}
+h2{font:400 26px/1.1 "Bebas Neue",sans-serif;letter-spacing:1px;margin:32px 0 8px}
+code{font-family:"Space Mono",monospace;font-size:14px;color:var(--cyan);word-break:break-all}
+li{margin:6px 0}a{color:var(--cyan)}
+footer{max-width:720px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:13px;border-top:1px solid #1B2438}
+</style>
+</head>
+<body>
+<main>
+<h1>Public API</h1>
+<p>Read-only endpoints for agents and tools. No accounts, no sign-ups, no personal data.</p>
+<h2>Endpoints</h2>
+<ul>
+<li><code>GET /api/status.json</code> — site health check</li>
+<li><code>GET /sitemap.xml</code> — every public page</li>
+</ul>
+<h2>Machine-readable</h2>
+<ul>
+<li>API catalog: <a href="/.well-known/api-catalog"><code>/.well-known/api-catalog</code></a></li>
+<li>OpenAPI 3.1: <a href="/api/openapi.json"><code>/api/openapi.json</code></a></li>
+<li>Agent access: <a href="/auth.md"><code>/auth.md</code></a></li>
+</ul>
+<h2>Off-limits</h2>
+<p>The Educators Hub (<code>/hub</code>) is for signed-in facilitators only.</p>
+<p><a href="/">Back to theharnessproject.org</a></p>
+</main>
+<footer>The HARNESS Project LLC | theharnessproject.org. For educational purposes only. Not medical advice. © 2026 Christopher Zacharie and The HARNESS Project LLC. All rights reserved.</footer>
+</body>
+</html>
