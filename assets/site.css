@@ -1244,3 +1244,13 @@ section[id],div[id]{scroll-margin-top:84px}
 .compass-list .node-full{color:var(--cape-muted)}
 .cfx-compass span.node-full{font-size:11.5px;line-height:1.35;color:var(--cape-muted)}
 .match-table .node-full{color:var(--muted)}
+
+/* Homepage audience paths, below the doors and previews (W-15) */
+.home-paths{background:var(--void)}
+.path-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+.path-card{display:flex;flex-direction:column;gap:6px;height:100%;padding:18px;border:1px solid var(--line);border-top:4px solid var(--pc,var(--gold));border-radius:6px;background:var(--panel);color:var(--ink);text-decoration:none}
+.path-card:hover,.path-card:focus-visible{border-color:var(--pc,var(--gold))}
+.path-who{font:700 12px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.path-card b{font:700 19px/1.25 var(--body)}
+.path-d{font-size:15px;line-height:1.45;color:var(--muted)}
+.path-more{margin:18px 0 0;font-size:15px}
