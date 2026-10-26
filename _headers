@@ -1,0 +1,21 @@
+/.well-known/api-catalog
+  Content-Type: application/linkset+json
+  Access-Control-Allow-Origin: *
+
+/api/openapi.json
+  Content-Type: application/vnd.oai.openapi+json
+  Access-Control-Allow-Origin: *
+
+/api/status.json
+  Content-Type: application/json
+  Cache-Control: no-store
+  Access-Control-Allow-Origin: *
+
+/auth.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/*
+  Link: </.well-known/api-catalog>; rel="api-catalog", </api/openapi.json>; rel="service-desc"; type="application/vnd.oai.openapi+json", </api/>; rel="service-doc"; type="text/html"
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

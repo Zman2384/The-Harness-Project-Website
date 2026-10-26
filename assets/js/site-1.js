@@ -1108,7 +1108,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
     }
     var p = all[i], next = all[i+1] || all[0], light = p.audience === "youth" || p.audience === "parent", parent = p.audience === "parent", edu = p.audience === "educator";
     page.className = "page " + (light ? "skin-light" : (edu ? "skin-dark skin-edu" : "skin-dark"));
-    page.setAttribute("data-title", p.title + " — The 1 a.m. Reality");
+    page.setAttribute("data-title", p.title.length > 44 ? p.title : p.title + " — The 1 a.m. Reality");
     var headCls = light ? "h-light" : "h-dark";
     var btnBack = light ? "btn btn-outline-light" : "btn btn-ghost";
     var btnNext = light ? "btn btn-blue" : "btn btn-gold";

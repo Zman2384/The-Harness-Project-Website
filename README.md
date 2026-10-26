@@ -20,3 +20,12 @@ It deploys with the site. One-time setup: Workers & Pages -> this project -> Set
 add a **Secret** `ANTHROPIC_API_KEY` (from console.anthropic.com), then redeploy. Optional variable `LILZ_MODEL`
 (default `claude-sonnet-5-5`). Without the key the app keeps using its on-device answers.
 Persona and rules: `functions/api/_lilz-persona.js`. Nothing is stored or logged.
+
+## Sitemap dates
+`.github/workflows/sitemap.yml` runs `tools/update_sitemap.py` after every push to main and
+commits new `<lastmod>` dates. A page's date only moves when its main content changes;
+menu, footer and `<head>` edits don't count.
+
+## Agent discovery
+`/.well-known/api-catalog`, `/api/` (docs, `openapi.json`, `status.json`), `/auth.md`.
+Content types and the sitewide `Link` header are set in `_headers`.

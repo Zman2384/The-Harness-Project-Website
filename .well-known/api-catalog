@@ -1,0 +1,10 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://theharnessproject.org/api/",
+      "service-desc": [{ "href": "https://theharnessproject.org/api/openapi.json", "type": "application/vnd.oai.openapi+json" }],
+      "service-doc": [{ "href": "https://theharnessproject.org/api/", "type": "text/html" }],
+      "status": [{ "href": "https://theharnessproject.org/api/status.json", "type": "application/json" }]
+    }
+  ]
+}

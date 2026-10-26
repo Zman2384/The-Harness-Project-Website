@@ -1,0 +1,35 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "The HARNESS Project public site",
+    "version": "1.0.0",
+    "description": "Read-only public endpoints for theharnessproject.org. No accounts, no sign-ups, no personal data. For educational purposes only. Not medical advice.",
+    "contact": { "email": "email@theharnessproject.org", "url": "https://theharnessproject.org/contact" }
+  },
+  "servers": [{ "url": "https://theharnessproject.org" }],
+  "paths": {
+    "/api/status.json": {
+      "get": {
+        "summary": "Site health check",
+        "operationId": "getStatus",
+        "responses": {
+          "200": {
+            "description": "Site is up",
+            "content": { "application/json": { "schema": {
+              "type": "object",
+              "properties": { "status": { "type": "string", "enum": ["ok"] }, "service": { "type": "string" }, "type": { "type": "string" } },
+              "required": ["status"]
+            } } }
+          }
+        }
+      }
+    },
+    "/sitemap.xml": {
+      "get": {
+        "summary": "List of public pages",
+        "operationId": "getSitemap",
+        "responses": { "200": { "description": "XML sitemap", "content": { "application/xml": {} } } }
+      }
+    }
+  }
+}
