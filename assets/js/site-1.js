@@ -849,10 +849,10 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<rect x="110" y="480" width="560" height="14" rx="4" fill="#C9B98F"/>' +
         phone(130,'#2A9D8F') + phone(250,'#2A9D8F') + phone(370,'#2A9D8F') + phone(490,'#2A9D8F') +
         '<g transform="rotate(4 690 260)"><rect x="600" y="150" width="200" height="200" fill="#FFE58A" stroke="#C29B38" stroke-width="2"/>' +
-        '<text x="620" y="196" font-family="Caveat, Segoe Print, cursive" font-size="30" font-weight="700" fill="#16324F">Phones sleep</text>' +
-        '<text x="620" y="236" font-family="Caveat, Segoe Print, cursive" font-size="30" font-weight="700" fill="#16324F">here at 10:30</text>' +
-        '<text x="620" y="286" font-family="Caveat, Segoe Print, cursive" font-size="26" fill="#A6387E">everyone. us too.</text>' +
-        '<text x="620" y="326" font-family="Caveat, Segoe Print, cursive" font-size="22" fill="#4E5A66">check in: 1 month</text></g>' +
+        '<text x="620" y="196" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="30" font-weight="700" fill="#16324F">Phones sleep</text>' +
+        '<text x="620" y="236" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="30" font-weight="700" fill="#16324F">here at 10:30</text>' +
+        '<text x="620" y="286" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="26" fill="#A6387E">everyone. us too.</text>' +
+        '<text x="620" y="326" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="22" fill="#4E5A66">check in: 1 month</text></g>' +
         '<text x="80" y="130" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="700" fill="#16324F">The Phone Plan</text>' +
         '<text x="82" y="172" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#7A5E17" letter-spacing="4">MADE TOGETHER</text>' +
         '<image href="' + LANE_ART.CREST_PARENT + '" x="870" y="116" width="260" height="234"/>' +
