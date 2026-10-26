@@ -1218,3 +1218,39 @@ section[id],div[id]{scroll-margin-top:84px}
 .legal-cards-cape-flow .legal-card b{color:#1D6F66}
 .legal-cards-cape-flow .legal-card span{color:#4E5A66}
 .legal-cards-cape-flow .legal-card:hover,.legal-cards-cape-flow .legal-card:focus-visible{border-color:#1D6F66}
+
+/* Mail forms: copy-and-send fallback for visitors without an email app (W-5) */
+.mail-fallback{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.mail-fallback p{margin:0 0 10px;font-size:15px}
+.mail-fallback label{display:block;font:700 13px/1.3 var(--mono);margin:0 0 6px}
+.mail-fallback textarea{min-height:120px;font:400 14px/1.45 var(--mono)}
+.mail-fallback .btn-row{margin:10px 0}
+.page.skin-edu .mail-fallback{background:#FFFFFF;border-color:#9DA5AD;color:#1C2631}
+.page.skin-edu .mail-fallback .form-note{color:#4A5767}
+
+/* Brave Space: with no approved comments yet, the rules and form fold behind one button (W-17) */
+.brave details.brave-join{margin-top:18px}
+.brave .brave-join > summary.btn{display:inline-flex;list-style:none;padding:0 20px;color:var(--void);font:700 15px/1 var(--body)}
+.brave .brave-join > summary.btn::-webkit-details-marker{display:none}
+.brave .brave-join[open] > summary.btn{margin-bottom:16px}
+
+/* App links: hosting note (W-3) */
+.app-host-note{font-size:14px;color:var(--muted);margin:10px 0 0;max-width:60ch}
+.skin-light .app-host-note{color:var(--cape-muted,#4E5A66)}
+
+/* Youth MATCH labels: callsign first, curriculum label as subtitle — same pairs as the CAPE preview and CAPE Flow (W-9) */
+.node-full{display:block;font:700 11.5px/1.35 var(--mono);letter-spacing:.06em;text-transform:uppercase;margin:2px 0 4px;opacity:.85}
+.compass-list .node{display:block}
+.compass-list .node-full{color:var(--cape-muted)}
+.cfx-compass span.node-full{font-size:11.5px;line-height:1.35;color:var(--cape-muted)}
+.match-table .node-full{color:var(--muted)}
+
+/* Homepage audience paths, below the doors and previews (W-15) */
+.home-paths{background:var(--void)}
+.path-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+.path-card{display:flex;flex-direction:column;gap:6px;height:100%;padding:18px;border:1px solid var(--line);border-top:4px solid var(--pc,var(--gold));border-radius:6px;background:var(--panel);color:var(--ink);text-decoration:none}
+.path-card:hover,.path-card:focus-visible{border-color:var(--pc,var(--gold))}
+.path-who{font:700 12px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.path-card b{font:700 19px/1.25 var(--body)}
+.path-d{font-size:15px;line-height:1.45;color:var(--muted)}
+.path-more{margin:18px 0 0;font-size:15px}

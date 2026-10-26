@@ -4,6 +4,8 @@ Static multi-page site. No build step: every folder's index.html is a page.
 
 - `/index.html` home; `/cape/`, `/harness/`, `/partners/`, `/hub/` ... one folder per page
 - `/blog/<post>/` one folder per blog post (post text lives in `assets/js/site-1.js`, POSTS list)
+  - The script re-renders each post when it loads; the post's `index.html` holds the same markup for search engines and no-JS visitors, so update both together.
+  - When a published post's text changes, set `updated: "YYYY-MM-DD"` on it (shows "Updated <date>" in the byline) and add the same `dateModified` to the post's structured data.
 - `assets/site.css` all styles; `assets/js/` scripts; `assets/img/` images; `assets/kits/` downloadable PDFs
 - `sitemap.xml`, `robots.txt`, `404.html`
 
@@ -23,8 +25,8 @@ Persona and rules: `functions/api/_lilz-persona.js`. Nothing is stored or logged
 
 ## Sitemap dates
 `.github/workflows/sitemap.yml` runs `tools/update_sitemap.py` after every push to main and
-commits new `<lastmod>` dates. A page's date only moves when its main content changes;
-menu, footer and `<head>` edits don't count.
+commits new `<lastmod>` dates. A page's date only moves when what a reader sees changes (words, links, images);
+menu, footer, `<head>` and markup-only edits don't count. `/hub` stays out of the sitemap on purpose (noindex).
 
 ## Agent discovery
 `/.well-known/api-catalog`, `/api/` (docs, `openapi.json`, `status.json`), `/auth.md`.

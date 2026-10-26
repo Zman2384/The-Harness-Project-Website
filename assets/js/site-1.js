@@ -25,6 +25,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
      POST TEMPLATE (Hook-Pivot): hero, hookTime + hook (Beat 1), pivot label + body (Beat 2), takeaway, closing,
      then question (adult: Today's Question, answered in comments) or reflect (youth/educator: reflection only).
      hero = pep | three | ghosts | fries, or add a new function to HEROES.
+     updated = "YYYY-MM-DD" whenever a post's text changes after it's published; it shows as "Updated <date>" in the byline.
      comments = approved comments only (adult/HARNESS posts only). The Brave Space section never renders on youth or educator posts, e.g. {name:"Jay", date:"2026-09-20", text:"..."} */
   var LANE_ART = {
     CREST_PARENT: "/assets/img/20a936859ab0.webp",
@@ -352,7 +353,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
     {
       slug: "doxy-pep-backup",
       title: "Doxy-PEP: a 72-hour backup for bacterial STIs",
-      audience: "adult", date: "2026-10-16", hero: "doxy",
+      audience: "adult", date: "2026-10-16", updated: "2026-10-26", hero: "doxy",
       heroAlt: "A glowing capsule over a starfield and grid floor, with three signal bars labeled syphilis, chlamydia and gonorrhea.",
       question: "If your provider offered doxy-PEP tomorrow, what's one question you'd want answered before you said yes?", comments: [],
       excerpt: "You had sex without a condom last night, and you've had an STI this year. Doxy-PEP is a backup with a clock on it. Here's how it works.",
@@ -373,7 +374,9 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
 <p>Doxy-PEP (doxycycline post-exposure prophylaxis) is an antibiotic taken after sex to lower the chance of getting certain bacterial STIs.</p>
 <div class="callout"><p style="margin:0"><b>How it's used:</b> one 200 mg dose of doxycycline, taken as soon as possible and within 72 hours after oral, anal, or vaginal sex. Never more than 200 mg in 24 hours.</p></div>
 <ul>
-<li><b>What it reduces:</b> in large trials, syphilis and chlamydia by more than 70%. Early trials also showed partial protection against gonorrhea, but more recent data suggest that benefit has faded as resistance spreads. <i>(Updated October 25, 2026.)</i></li>
+<li><b>What it reduces:</b> in clinical trials, syphilis by about 80–87% and chlamydia by about 87–88% (CDC, 2024).</li>
+<li><b>The gonorrhea gap:</b> early trials showed partial protection against gonorrhea. A large Kaiser Permanente Southern California study (<i>The Lancet Infectious Diseases</i>, May 2026) found no measurable gonorrhea benefit by 2025 as resistant strains spread. Protection against chlamydia and syphilis held.</li>
+<li><b>If you do get gonorrhea:</b> it's still treatable. CDC's recommended treatment is still a single ceftriaxone shot. Two oral antibiotics approved in December 2025 are reserved for people who can't use the standard treatment.</li>
 <li><b>What it doesn't touch:</b> HIV, mpox, herpes, or HPV. Keep PrEP, vaccines, and condoms in your plan.</li>
 <li><b>Who it's recommended for:</b> CDC recommends it for gay and bisexual men and transgender women who've had syphilis, chlamydia, or gonorrhea in the past 12 months. If that's not you, ask your provider whether it fits your situation.</li>
 </ul>
@@ -381,13 +384,13 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
 <ol>
 <li><b>Call today.</b> Your PrEP provider, a sexual health clinic, or a telehealth service can prescribe it.</li>
 <li><b>Say it plainly.</b> Use the script below.</li>
-<li><b>Book your testing.</b> People using doxy-PEP should test for STIs every 3 months.</li>
+<li><b>Book your testing.</b> People using doxy-PEP should test for STIs every 3–6 months.</li>
 </ol>
 <blockquote>"I'm interested in doxy-PEP. I had a bacterial STI this year and I want a prescription I can keep on hand."</blockquote>
 <h2>Map it to MATCH</h2>
 <ul>
 <li><b>Medications:</b> doxy-PEP sits beside PrEP, not in place of it.</li>
-<li><b>Awareness:</b> test every 3 months, and know your results.</li>
+<li><b>Awareness:</b> test every 3–6 months, and know your results.</li>
 <li><b>Tools:</b> condoms still prevent HIV and STIs that doxy-PEP misses.</li>
 <li><b>Communication:</b> tell partners what you're using, and ask your provider about side effects and how to take it.</li>
 <li><b>Habits:</b> keep a filled prescription where you'll have it within 72 hours.</li>
@@ -753,10 +756,10 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<text x="82" y="160" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#1D6F66" letter-spacing="4">PLAN IT BEFORE YOU GO</text>';
     },
     doxy: function(){
-      var bars = [["SYPHILIS",">70%","#90B14B",0.78],["CHLAMYDIA",">70%","#6E99A3",0.74],["GONORRHEA","FADING","#FFC93C",0.18]], g = '';
+      var bars = [["SYPHILIS","80–87%","#90B14B",0.84],["CHLAMYDIA","87–88%","#6E99A3",0.88],["GONORRHEA","FADED","#FFC93C",0.04]], g = '';
       bars.forEach(function(b,i){ var y = 200 + i*96;
         g += '<text x="700" y="'+(y-12)+'" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#EDEFF4" letter-spacing="3">'+b[0]+'</text>' +
-             '<text x="1120" y="'+(y-12)+'" text-anchor="end" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="'+b[2]+'">'+b[1]+(b[1]==='FADING'?'':' LOWER')+'</text>' +
+             '<text x="1120" y="'+(y-12)+'" text-anchor="end" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="'+b[2]+'">'+b[1]+(b[1]==='FADED'?'':' LOWER')+'</text>' +
              '<rect x="700" y="'+y+'" width="420" height="20" rx="3" fill="#15223A"/><rect x="700" y="'+y+'" width="'+(420*b[3]).toFixed(0)+'" height="20" rx="3" fill="'+b[2]+'"/>'; });
       return '<rect width="1200" height="675" fill="#05070D"/>' + starsSVG(1200,675,130,31) + floorSVG("#15223A") +
         '<g transform="rotate(-32 330 300)"><rect x="170" y="230" width="320" height="140" rx="70" fill="#0A0F1C" stroke="#3ED6E8" stroke-width="5"/>' +
@@ -846,10 +849,10 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<rect x="110" y="480" width="560" height="14" rx="4" fill="#C9B98F"/>' +
         phone(130,'#2A9D8F') + phone(250,'#2A9D8F') + phone(370,'#2A9D8F') + phone(490,'#2A9D8F') +
         '<g transform="rotate(4 690 260)"><rect x="600" y="150" width="200" height="200" fill="#FFE58A" stroke="#C29B38" stroke-width="2"/>' +
-        '<text x="620" y="196" font-family="Caveat, Segoe Print, cursive" font-size="30" font-weight="700" fill="#16324F">Phones sleep</text>' +
-        '<text x="620" y="236" font-family="Caveat, Segoe Print, cursive" font-size="30" font-weight="700" fill="#16324F">here at 10:30</text>' +
-        '<text x="620" y="286" font-family="Caveat, Segoe Print, cursive" font-size="26" fill="#A6387E">everyone. us too.</text>' +
-        '<text x="620" y="326" font-family="Caveat, Segoe Print, cursive" font-size="22" fill="#4E5A66">check in: 1 month</text></g>' +
+        '<text x="620" y="196" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="30" font-weight="700" fill="#16324F">Phones sleep</text>' +
+        '<text x="620" y="236" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="30" font-weight="700" fill="#16324F">here at 10:30</text>' +
+        '<text x="620" y="286" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="26" fill="#A6387E">everyone. us too.</text>' +
+        '<text x="620" y="326" font-family="Playfair Display, Georgia, serif" font-style="italic" font-size="22" fill="#4E5A66">check in: 1 month</text></g>' +
         '<text x="80" y="130" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="700" fill="#16324F">The Phone Plan</text>' +
         '<text x="82" y="172" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#7A5E17" letter-spacing="4">MADE TOGETHER</text>' +
         '<image href="' + LANE_ART.CREST_PARENT + '" x="870" y="116" width="260" height="234"/>' +
@@ -860,6 +863,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
       for (var x=0;x<=1200;x+=30) grid += '<line x1="'+x+'" y1="0" x2="'+x+'" y2="675" stroke="#2E3B4A" stroke-opacity=".10" stroke-width="1"/>';
       for (var y=0;y<=675;y+=30) grid += '<line x1="0" y1="'+y+'" x2="1200" y2="'+y+'" stroke="#2E3B4A" stroke-opacity=".10" stroke-width="1"/>';
       return '<rect width="1200" height="675" fill="#E7EBEF"/>' + grid +
+        '<g transform="translate(0 85)">' +
         '<rect x="110" y="250" width="420" height="70" fill="#90B14B" fill-opacity=".85"/>' +
         '<text x="130" y="296" font-family="Space Mono, monospace" font-size="22" font-weight="700" fill="#1C2631" letter-spacing="3">GREEN · 6–8</text>' +
         '<rect x="530" y="230" width="22" height="110" fill="#2E3B4A"/><rect x="552" y="230" width="22" height="110" fill="#2E3B4A"/>' +
@@ -869,7 +873,8 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<path d="M1080 395l30 20-30 20" fill="none" stroke="#F4F6F8" stroke-width="5"/>' +
         '<text x="110" y="150" font-family="Bebas Neue, Impact, sans-serif" font-size="84" fill="#1C2631">TRACK INTEGRITY</text>' +
         '<text x="112" y="196" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#7C5F1C" letter-spacing="4">THE GATE STAYS CLOSED</text>' +
-        '<image href="' + LANE_ART.SEAL_EDU + '" x="940" y="60" width="170" height="177"/>';
+        '<image href="' + LANE_ART.SEAL_EDU + '" x="940" y="60" width="170" height="177"/>' +
+        '</g>';
     },
     pep: function(){
       var ticks = "";
@@ -976,6 +981,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<div><b>Share tools, not prescriptions</b><span>Focus on sharing tactical tools and pointing back to the MATCH framework rather than giving medical advice.</span></div>' +
       '</div></details>' +
       (p.question ? '<div class="todays-q"><h3>Today\u2019s question</h3><p>' + esc(p.question) + '</p></div>' : '') +
+      (comments.length ? '' : '<details class="brave-join"><summary class="btn btn-gold">Answer today\u2019s question</summary>') +
       '<div class="rules-panel">' +
         '<div class="rules-top"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 20 5v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z" fill="none" stroke="#FF2E88" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="#FF2E88" stroke-width="2"/></svg>Brave Space ground rules</h3>' +
         '<span class="remaining" aria-live="polite">' + LOCK + '<span class="rem-n">' + RULES.length + ' remaining</span></span></div>' +
@@ -995,11 +1001,11 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
           '<p class="form-status" role="status"></p>' +
         '</fieldset>' +
       '</form>' +
-      '<div class="comments"><h3>Comments (' + comments.length + ')</h3>' +
-        (comments.length ? comments.map(function(c){
-          return '<div class="comment"><b>' + esc(c.name) + '</b><time datetime="' + esc(c.date) + '">' + fmtDate(c.date) + '</time><p>' + esc(c.text) + '</p></div>';
-        }).join('') : '<p class="muted">No comments yet. Answer today\u2019s question to start the conversation.</p>') +
-      '</div>' +
+      (comments.length
+        ? '<div class="comments"><h3>Comments (' + comments.length + ')</h3>' + comments.map(function(c){
+            return '<div class="comment"><b>' + esc(c.name) + '</b><time datetime="' + esc(c.date) + '">' + fmtDate(c.date) + '</time><p>' + esc(c.text) + '</p></div>';
+          }).join('') + '</div>'
+        : '</details>') +
     '</section>';
   }
 
@@ -1033,10 +1039,11 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
       e.preventDefault();
       var name = form.querySelector('#cm-name').value.trim(), text = form.querySelector('#cm-text').value.trim();
       if (!name || !text){ status.textContent = 'Add a name or handle and a comment to submit.'; status.className = 'form-status err'; return; }
-      var body = 'Post: ' + p.title + '\nLink: #/blog/' + p.slug + '\nName or handle: ' + name +
+      var body = 'Post: ' + p.title + '\nLink: https://theharnessproject.org/blog/' + p.slug + '\nName or handle: ' + name +
         '\nAgreed to all 6 Brave Space ground rules: yes\n\nComment:\n' + text;
       window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Comment for review: ' + p.title) + '&body=' + encodeURIComponent(body);
-      status.textContent = 'Comment drafted in your mail app. Send it from there to submit it for review.'; status.className = 'form-status';
+      status.textContent = 'Comment ready. Send it from your email app to submit it for review.'; status.className = 'form-status';
+      mailFallback(form.querySelector('fieldset'), 'Comment for review: ' + p.title, body, 'comment');
     });
   }
 
@@ -1126,7 +1133,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<figure class="post-hero">' + heroSVG(p, false) + '</figure>' +
         '<span class="aud ' + p.audience + '">' + AUD[p.audience] + '</span>' + draftTag(p) +
         '<h1 class="' + headCls + '" style="margin-top:12px">' + esc(p.title) + '</h1>' +
-        '<div class="byline">' + avatarHTML() + '<span><b>' + AUTHOR.name + '</b><span class="post-meta">' + fmtDate(p.date) + ' — ' + p.minutes + ' min read — The 1 a.m. Reality</span></span></div>' +
+        '<div class="byline">' + avatarHTML() + '<span><b>' + AUTHOR.name + '</b><span class="post-meta">' + fmtDate(p.date) + (p.updated ? ' · Updated <time datetime="' + p.updated + '">' + fmtDate(p.updated) + '</time>' : '') + ' — ' + p.minutes + ' min read — The 1 a.m. Reality</span></span></div>' +
       '</div></section>' +
       '<section class="post-body"><div class="wrap"><article class="prose">' + articleHTML(p) + '</article>' +
         '<aside class="author-card" aria-label="About the author">' + avatarHTML() + '<div><p class="post-meta" style="margin-bottom:4px">Written by</p><b style="display:block;font:700 18px/1.3 var(--body)">' + AUTHOR.name + '</b><p style="margin-bottom:8px">' + AUTHOR.role + '</p><p>' + AUTHOR.bio + ' <a href="/about">About</a></p></div></aside>' +
@@ -1234,7 +1241,27 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
   }
   var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(drawStars, 150); });
 
-  // Forms compose an email in the visitor's mail app
+  // Forms compose an email in the visitor's mail app. Because that depends on the
+  // visitor having a mail app set up, every send also shows a copy-and-send fallback.
+  function copyText(text, btn){
+    var done = function(){ var t = btn.textContent; btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = t; }, 1600); };
+    if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(done, function(){ legacy(); }); return; }
+    legacy();
+    function legacy(){ var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch (e) {} ta.remove(); }
+  }
+  function mailFallback(form, subject, body, what){
+    var box = form.querySelector('.mail-fallback');
+    if (!box) { box = document.createElement('div'); box.className = 'mail-fallback'; form.appendChild(box); }
+    var full = 'To: ' + EMAIL + '\nSubject: ' + subject + '\n\n' + body, id = 'mf-' + Math.random().toString(36).slice(2, 8);
+    box.innerHTML =
+      '<p><b>Your email app should open with your ' + what + ' ready to send.</b> If nothing opened, or this device has no email app, copy it below and send it to <a href="mailto:' + EMAIL + '">' + EMAIL + '</a> from any email account, including webmail.</p>' +
+      '<label for="' + id + '">Your ' + what + '</label><textarea id="' + id + '" readonly rows="6"></textarea>' +
+      '<div class="btn-row"><button type="button" class="btn btn-ghost" data-copy="msg">Copy ' + what + '</button><button type="button" class="btn btn-ghost" data-copy="addr">Copy email address</button></div>' +
+      '<p class="form-note">We reply within one business day.</p>';
+    box.querySelector('textarea').value = full;
+    box.querySelector('[data-copy="msg"]').addEventListener('click', function(){ copyText(full, this); });
+    box.querySelector('[data-copy="addr"]').addEventListener('click', function(){ copyText(EMAIL, this); });
+  }
   function bindForms(root){ root.querySelectorAll('form[data-mail]').forEach(function(f){
     if (f.dataset.bound) return; f.dataset.bound = '1';
     f.addEventListener('submit', function(e){
@@ -1266,7 +1293,8 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
       else { subject = 'Website inquiry: ' + f.querySelector('#c-topic').selectedOptions[0].text;
         ['name','email','message'].forEach(function(k){ lines.push(k.charAt(0).toUpperCase()+k.slice(1) + ': ' + (d.get(k)||'')); }); }
       window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
-      if (status){ status.textContent = 'Email drafted in your mail app. Send it from there to finish.'; status.className = 'form-status'; }
+      if (status){ status.textContent = 'Message ready. Send it from your email app to finish.'; status.className = 'form-status'; }
+      if (kind !== 'signal') mailFallback(f, subject, lines.join('\n'), kind === 'pilot' ? 'pilot request' : 'message');
     });
   }); }
   bindForms(document);
