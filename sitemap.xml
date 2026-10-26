@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- /matchflow and /capeflow are the apps' own canonical addresses (each app's canonical tag points here); they forward to the app host.
+       /hub is left out on purpose: the Educators Hub is licensed and its landing page is noindex. -->
+  <url><loc>https://theharnessproject.org/matchflow</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://theharnessproject.org/capeflow</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://theharnessproject.org/about</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://theharnessproject.org/blog/doxy-pep-backup</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://theharnessproject.org/blog/doxy-pep-backup</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/fries-consent-checks</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/blog</loc><lastmod>2026-10-25</lastmod></url>
-  <url><loc>https://theharnessproject.org/blog/naming-the-ghosts</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://theharnessproject.org/blog/naming-the-ghosts</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/pep-72-hour-window</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/the-1258-text</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://theharnessproject.org/blog/the-cost-ghost</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://theharnessproject.org/blog/the-first-60-seconds</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://theharnessproject.org/blog/the-cost-ghost</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://theharnessproject.org/blog/the-first-60-seconds</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/the-group-chat-screenshot</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/the-parent-email</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://theharnessproject.org/blog/the-phone-plan</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://theharnessproject.org/blog/the-phone-plan</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/the-ride-home-plan</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://theharnessproject.org/blog/three-second-rule</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://theharnessproject.org/blog/track-integrity</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://theharnessproject.org/blog/what-your-teen-will-hear-in-cape</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://theharnessproject.org/blog/three-second-rule</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://theharnessproject.org/blog/track-integrity</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://theharnessproject.org/blog/what-your-teen-will-hear-in-cape</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/books-apps</loc><lastmod>2026-10-25</lastmod></url>
-  <url><loc>https://theharnessproject.org/cape</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://theharnessproject.org/cape</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/certification</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/contact</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/faq</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://theharnessproject.org/harness</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://theharnessproject.org/harness</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/legal</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://theharnessproject.org/legal/match-flow/terms</loc><lastmod>2026-10-25</lastmod></url>
@@ -34,8 +38,8 @@
   <url><loc>https://theharnessproject.org/legal/cape-flow/health</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://theharnessproject.org/legal/cape-flow/parents</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://theharnessproject.org/legal/cape-flow/accessibility</loc><lastmod>2026-10-25</lastmod></url>
-  <url><loc>https://theharnessproject.org/match-compass-preview</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://theharnessproject.org/match-preview</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://theharnessproject.org/match-compass-preview</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://theharnessproject.org/match-preview</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://theharnessproject.org/match</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/partners</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://theharnessproject.org/signal</loc><lastmod>2026-10-21</lastmod></url>
