@@ -1254,3 +1254,8 @@ section[id],div[id]{scroll-margin-top:84px}
 .path-card b{font:700 19px/1.25 var(--body)}
 .path-d{font-size:15px;line-height:1.45;color:var(--muted)}
 .path-more{margin:18px 0 0;font-size:15px}
+/* CAPE watch: "wear your CAPE every day" */
+.cape-watch{margin:0 auto;max-width:340px;width:100%}
+.cape-watch img{width:100%;height:auto;display:block}
+.cape-watch figcaption{display:flex;justify-content:space-between;gap:16px;margin-top:10px;font:700 12px/1.35 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cape-c-ink)}
+.cape-watch figcaption span:last-child{text-align:right}
