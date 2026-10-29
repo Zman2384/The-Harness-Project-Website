@@ -1,0 +1,295 @@
+{
+  "updated": "2026-10-29",
+  "editions": {
+    "cape": "CAPE Youth Edition v3.1",
+    "harness": "HARNESS Adult Track v2.1"
+  },
+  "programs": {
+    "start": {
+      "label": "Start here",
+      "sub": "How the Hub works and the rules every session follows"
+    },
+    "cape": {
+      "label": "CAPE Youth Edition",
+      "sub": "Grades 6–12 · Green Track 6–8 · Blue Track 9–12"
+    },
+    "harness": {
+      "label": "HARNESS Adult Track",
+      "sub": "18+ · MATCH Your Protection"
+    }
+  },
+  "kinds": {
+    "guide": "Guide",
+    "print": "Print set",
+    "cards": "Cards",
+    "posters": "Posters",
+    "interactive": "Interactive tool",
+    "reference": "Reference"
+  },
+  "items": [
+    {
+      "id": "field-guide",
+      "program": "start",
+      "kind": "guide",
+      "title": "Hub Field Guide",
+      "desc": "Start here. What is in the Hub and in what order to use it, the safety and content rules that apply to every session, Texas consent requirements for CAPE, and the clinical figures facilitators should quote.",
+      "use": "Facilitators",
+      "src": "field-guide.html",
+      "bytes": 19046,
+      "mime": "text/html",
+      "sha256": "15384d9727b34651"
+    },
+    {
+      "id": "cape-task-cards",
+      "program": "cape",
+      "kind": "cards",
+      "title": "CAPE Facilitator Task Cards",
+      "desc": "One card per lesson for all 18 lessons: objectives, the five-step sequence, the takeaway, and the one thing that tends to go wrong. Green and Blue Track marked.",
+      "use": "Facilitators",
+      "src": "cape-task-cards.html",
+      "bytes": 111811,
+      "mime": "text/html",
+      "sha256": "29081e41cd791c0c"
+    },
+    {
+      "id": "cape-activity-handouts",
+      "program": "cape",
+      "kind": "print",
+      "title": "CAPE Activity Handouts",
+      "desc": "The 18 reproducible worksheets the curriculum names, one full page per lesson, including the four-tier Boundary Menu, the Trusted Adults List and My Health Team.",
+      "use": "Students",
+      "src": "cape-activity-handouts.html",
+      "bytes": 68596,
+      "mime": "text/html",
+      "sha256": "750abbf561cccdfe"
+    },
+    {
+      "id": "cape-scenario-cards",
+      "program": "cape",
+      "kind": "cards",
+      "title": "CAPE Scenario & Practice Cards",
+      "desc": "A cut-apart deck for every lesson: 18 decks, 122 cards, four to a page with dashed cut lines.",
+      "use": "Students",
+      "src": "cape-scenario-cards.html",
+      "bytes": 97944,
+      "mime": "text/html",
+      "sha256": "e98d900946a5feea"
+    },
+    {
+      "id": "cape-posters",
+      "program": "cape",
+      "kind": "posters",
+      "title": "CAPE Classroom Posters",
+      "desc": "One poster per lesson with the key takeaway at wall-reading size, including the MATCH Compass and the CAPE Promise.",
+      "use": "Classroom",
+      "src": "cape-posters.html",
+      "bytes": 95679,
+      "mime": "text/html",
+      "sha256": "e2f3e18a5e98a2fa"
+    },
+    {
+      "id": "cape-consent-cafe",
+      "program": "cape",
+      "kind": "interactive",
+      "title": "The Consent Café",
+      "desc": "FRIES consent practice built around a four-tier Boundary Menu (Appetizers, Main Courses, Specials, Do Not Serve), with role-play, rights, an exit card and facilitator notes.",
+      "use": "Students",
+      "src": "cape-consent-cafe.html",
+      "bytes": 106403,
+      "mime": "text/html",
+      "sha256": "db91666730843d09"
+    },
+    {
+      "id": "cape-boundary-script-lab",
+      "program": "cape",
+      "kind": "interactive",
+      "title": "Boundary Script Lab",
+      "desc": "Students load a scenario, build a boundary script, and practice the 3-Second Rule before sending. Green Track and Blue Track bays.",
+      "use": "Students",
+      "src": "cape-boundary-script-lab.html",
+      "bytes": 90714,
+      "mime": "text/html",
+      "sha256": "d0b6311dfb34168c"
+    },
+    {
+      "id": "cape-stress-test-cards",
+      "program": "cape",
+      "kind": "interactive",
+      "title": "CAPE Stress Test Scenario Cards",
+      "desc": "The blindside sequence for the Mindset of Protection lesson: twelve pressure scenarios, filterable by track and type, each tagged with the MATCH layer that answers it.",
+      "use": "Facilitators",
+      "src": "cape-stress-test-cards.html",
+      "bytes": 49023,
+      "mime": "text/html",
+      "sha256": "90f32aa381a87a99"
+    },
+    {
+      "id": "cape-blue-track-decision-cards",
+      "program": "cape",
+      "kind": "cards",
+      "title": "Blue Track 1 a.m. Reality Decision Cards",
+      "desc": "Grades 9–12. MATCH decision cards for high-pressure moments, using the youth MATCH labels and youth clinical content only (HPV and Hep B vaccines).",
+      "use": "Students 9–12",
+      "src": "cape-blue-track-decision-cards.html",
+      "bytes": 54532,
+      "mime": "text/html",
+      "sha256": "59af1fb17d1f0862"
+    },
+    {
+      "id": "cape-family-activities",
+      "program": "cape",
+      "kind": "interactive",
+      "title": "CAPE Family Activities",
+      "desc": "Two take-home activities for families: the FRIES Dinner Game and MATCH Compass Night.",
+      "use": "Families",
+      "src": "cape-family-activities.html",
+      "bytes": 60011,
+      "mime": "text/html",
+      "sha256": "df2c26645b90550b"
+    },
+    {
+      "id": "harness-print-suite",
+      "program": "harness",
+      "kind": "print",
+      "title": "HARNESS v2.1 Print Suite",
+      "desc": "The complete print set for all 19 lessons: participant handouts, posters, facilitator task cards, the eight Stress-Test Dossiers and the sixteen Ghost Catalog cards.",
+      "use": "Facilitators + participants",
+      "src": "harness-print-suite.html",
+      "bytes": 146724,
+      "mime": "text/html",
+      "sha256": "8ae6113ca17cfee6"
+    },
+    {
+      "id": "harness-activities-hub",
+      "program": "harness",
+      "kind": "reference",
+      "title": "Interactive Activities Hub",
+      "desc": "Every learning objective, activity and takeaway in one searchable guide, with progress tracking and the five v2.1 workshop delivery models.",
+      "use": "Facilitators",
+      "src": "harness-activities-hub.html",
+      "bytes": 86900,
+      "mime": "text/html",
+      "sha256": "e141c0ebac05ac5a"
+    },
+    {
+      "id": "harness-activities",
+      "program": "harness",
+      "kind": "reference",
+      "title": "Activities Reference",
+      "desc": "The printable activity guide: objectives, activity steps and takeaways lesson by lesson, plus the Chapter 14 Stress-Test Pack.",
+      "use": "Facilitators",
+      "src": "harness-activities.html",
+      "bytes": 46266,
+      "mime": "text/html",
+      "sha256": "1e872d2190fdb912"
+    },
+    {
+      "id": "harness-handouts",
+      "program": "harness",
+      "kind": "print",
+      "title": "Complete Participant Handouts",
+      "desc": "Full-length participant handouts with the reference content: STI and vaccine tables, the PEP hour table, the Doxy-PEP evidence, U=U language practice and testing timelines.",
+      "use": "Participants",
+      "src": "harness-handouts.html",
+      "bytes": 120400,
+      "mime": "text/html",
+      "sha256": "99859b4f8b0b25cb"
+    },
+    {
+      "id": "harness-task-scenario-cards",
+      "program": "harness",
+      "kind": "cards",
+      "title": "Task & Scenario Cards",
+      "desc": "Facilitator task cards, participant cards and role-play scenario cards by module, filterable by card type.",
+      "use": "Facilitators + participants",
+      "src": "harness-task-scenario-cards.html",
+      "bytes": 113513,
+      "mime": "text/html",
+      "sha256": "7f11f9ea1e640432"
+    },
+    {
+      "id": "harness-activity-cards-handouts",
+      "program": "harness",
+      "kind": "cards",
+      "title": "Activity Cards & Handouts Library",
+      "desc": "Every worksheet, card sort, role-play set and wallet card, searchable by module and type, with full printable content behind each card.",
+      "use": "Facilitators + participants",
+      "src": "harness-activity-cards-handouts.html",
+      "bytes": 158209,
+      "mime": "text/html",
+      "sha256": "01d37ffb568fc3c5"
+    },
+    {
+      "id": "harness-module5-handouts",
+      "program": "harness",
+      "kind": "print",
+      "title": "Module 5 & Stress-Test Pack Handouts",
+      "desc": "Your Perfect MATCH, the Chapter 14 pivot and redundancy logic handouts, the Emergency Protocol decision trees, and the Plan Stress Test workshop with Constraint Cards.",
+      "use": "Facilitators + participants",
+      "src": "harness-module5-field-kit-handouts.html",
+      "bytes": 64126,
+      "mime": "text/html",
+      "sha256": "1c2fc2a53dc381f2"
+    },
+    {
+      "id": "harness-match-task-cards",
+      "program": "harness",
+      "kind": "cards",
+      "title": "MATCH Activity Task Cards",
+      "desc": "One facilitator card per MATCH layer, each with an activity, objective, steps and debrief question.",
+      "use": "Facilitators",
+      "src": "harness-match-task-cards.html",
+      "bytes": 17792,
+      "mime": "text/html",
+      "sha256": "e14fa325f86c3d4d"
+    },
+    {
+      "id": "harness-facilitator-dashboard",
+      "program": "harness",
+      "kind": "reference",
+      "title": "Facilitator's Dashboard",
+      "desc": "Prep, teach, track and resources in one place: the MATCH layer guides, safety escalation matrix, troubleshooting what-ifs, assessment checklist and partner letter template.",
+      "use": "Facilitators",
+      "src": "harness-facilitator-dashboard.html",
+      "bytes": 80017,
+      "mime": "text/html",
+      "sha256": "b6f3cbb3955da032"
+    },
+    {
+      "id": "harness-naming-the-ghosts",
+      "program": "harness",
+      "kind": "reference",
+      "title": "Naming the Ghosts: Healthcare Friction Catalog",
+      "desc": "The catalog of healthcare-visit fears behind the Anxiety Audit, each mapped to the MATCH layer that answers it.",
+      "use": "Facilitators",
+      "src": "harness-naming-the-ghosts.html",
+      "bytes": 33551,
+      "mime": "text/html",
+      "sha256": "c55fe6b5786f36ec"
+    },
+    {
+      "id": "harness-stress-test-pivot",
+      "program": "harness",
+      "kind": "interactive",
+      "title": "Practice the Pivot",
+      "desc": "Eight Plan A-fails scenarios. Participants choose a first move, then reveal the coaching note.",
+      "use": "Participants",
+      "src": "harness-stress-test-pivot.html",
+      "bytes": 12180,
+      "mime": "text/html",
+      "sha256": "861cde9e0e6c93de"
+    },
+    {
+      "id": "match-flow-walkthrough",
+      "program": "harness",
+      "kind": "interactive",
+      "title": "MATCH Flow App Walkthrough",
+      "desc": "A screen-by-screen tour of the SafER Score, Stress Test Lab, Script Vault and Clinic Finder, for showing participants the app in session.",
+      "use": "Facilitators",
+      "src": "match-flow-app-walkthrough.html",
+      "bytes": 13135,
+      "mime": "text/html",
+      "sha256": "9001c857805a2502"
+    }
+  ]
+}
