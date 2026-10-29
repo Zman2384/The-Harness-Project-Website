@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Educators Hub — The HARNESS Project</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/educators-hub/hub.css">
+</head>
+<body class="hv-body">
+<div class="hv-bar">
+  <a href="/educators-hub/">← Library</a>
+  <span class="hv-title" id="hv-title">Opening…</span>
+  <button type="button" id="hv-print" hidden>Print</button>
+  <a id="hv-newtab" href="#" target="_blank" rel="noopener" hidden>Open in new tab</a>
+  <a id="hv-dl" href="#" download hidden>Download</a>
+</div>
+<div class="hv-msg" id="hv-msg" role="status" aria-live="polite"><p>Unlocking the file…</p></div>
+<iframe class="hv-frame" id="hv-frame" title="Hub resource" hidden></iframe>
+<script src="/educators-hub/hub.js"></script>
+<script>
+(function(){
+  var H = window.HarnessHub, id = new URLSearchParams(location.search).get('id');
+  var msg = document.getElementById('hv-msg'), frame = document.getElementById('hv-frame');
+  function fail(html){ msg.innerHTML = html; document.getElementById('hv-title').textContent = 'Educators Hub'; }
+  if (!id) { fail('<h1>No file chosen</h1><p><a href="/educators-hub/">Back to the library</a></p>'); return; }
+  if (!H.currentKey()) { location.replace('/educators-hub/?next=' + encodeURIComponent(id) + '#hub-gate'); return; }
+  H.catalog().then(function(c){
+    var item = c.items.filter(function(i){ return i.id === id; })[0];
+    if (!item) throw new Error('missing');
+    document.title = item.title + ' — Educators Hub';
+    document.getElementById('hv-title').textContent = item.title;
+    return H.openItem(item).then(function(blob){
+      var url = URL.createObjectURL(blob), isHtml = item.mime === 'text/html';
+      var ext = isHtml ? '.html' : (item.mime === 'application/pdf' ? '.pdf' : '');
+      var dl = document.getElementById('hv-dl'); dl.href = url; dl.download = item.id + ext; dl.hidden = false;
+      var nt = document.getElementById('hv-newtab'); nt.href = url; nt.hidden = false;
+      if (isHtml) {
+        var pr = document.getElementById('hv-print'); pr.hidden = false;
+        pr.addEventListener('click', function(){ try { frame.contentWindow.focus(); frame.contentWindow.print(); } catch (e) { window.open(url, '_blank'); } });
+      }
+      frame.src = url; frame.hidden = false; msg.hidden = true;
+    });
+  }).catch(function(e){
+    if (e && e.message === 'signed-out') { location.replace('/educators-hub/?next=' + encodeURIComponent(id) + '#hub-gate'); return; }
+    fail('<h1>This file could not open</h1><p>' + (e && e.message && e.message !== 'missing' ? e.message + ' ' : '') + 'Go <a href="/educators-hub/">back to the library</a> and try again, or <a href="/contact">contact us</a> if it keeps happening.</p>');
+  });
+})();
+</script>
+</body>
+</html>

@@ -13,7 +13,7 @@ Anonymous, unauthenticated `GET` of public pages and the endpoints listed in the
 None required or accepted.
 
 ## Off-limits
-- `/hub` (Educators Hub) is for signed-in human facilitators only. Do not crawl, summarize or redistribute it.
+- `/hub` and `/educators-hub/` (Educators Hub) are for licensed human facilitators only. Do not crawl, summarize or redistribute them; the library files are encrypted.
 - `/api/lil-z` serves the MATCH Flow app only and is not offered to agents.
 
 ## Discovery

@@ -19,3 +19,11 @@
   Link: </.well-known/api-catalog>; rel="api-catalog", </api/openapi.json>; rel="service-desc"; type="application/vnd.oai.openapi+json", </api/>; rel="service-doc"; type="text/html"
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+
+/educators-hub/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-cache
+
+/educators-hub/vault/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-cache
