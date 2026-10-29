@@ -842,6 +842,16 @@ footer.site-foot{background:var(--void);padding:56px 0 34px;border-top:1px solid
 .cfx-chip{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font:700 18px/1 var(--cape-display);flex:none}
 .cfx-compass b{display:block;font:700 17px/1.3 var(--body);color:var(--cape-ink)}
 .cfx-compass span:not(.cfx-chip){font-size:15.5px;line-height:1.5;color:var(--cape-muted)}
+/* M.A.T.C.H. compass-node dials (same art as the CAPE Flow app): every MATCH Compass breakdown */
+.match-node{display:block;flex:none;width:44px;height:44px;border-radius:50%;filter:drop-shadow(0 2px 3px rgba(22,35,46,.22))}
+.compass-list .match-node{margin-top:2px}
+.dash-nodes li{display:flex;align-items:center;gap:10px}
+.dash-nodes .match-node{width:36px;height:36px}
+.cfx-compass .cfx-node{width:40px;height:40px}
+[data-pv="cape"] .pv-badge.pv-dial{background:none;box-shadow:none;text-shadow:none;padding:0}
+[data-pv="cape"] .pv-badge.pv-dial::before{content:none}
+[data-pv="cape"] .pv-badge.pv-dial .match-node{width:100%;height:100%}
+[data-pv="cape"] .pv-node[aria-pressed="true"] .pv-badge.pv-dial{box-shadow:0 0 0 2px var(--cape-panel),0 0 0 4px var(--lc)}
 .cf-features .btn-row{margin-top:8px}
 
 /* ---------- Site-wide title masthead (chrome wordmark) ---------- */
