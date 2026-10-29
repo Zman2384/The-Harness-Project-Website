@@ -1234,10 +1234,6 @@ section[id],div[id]{scroll-margin-top:84px}
 .brave .brave-join > summary.btn::-webkit-details-marker{display:none}
 .brave .brave-join[open] > summary.btn{margin-bottom:16px}
 
-/* App links: hosting note (W-3) */
-.app-host-note{font-size:14px;color:var(--muted);margin:10px 0 0;max-width:60ch}
-.skin-light .app-host-note{color:var(--cape-muted,#4E5A66)}
-
 /* Youth MATCH labels: callsign first, curriculum label as subtitle — same pairs as the CAPE preview and CAPE Flow (W-9) */
 .node-full{display:block;font:700 11.5px/1.35 var(--mono);letter-spacing:.06em;text-transform:uppercase;margin:2px 0 4px;opacity:.85}
 .compass-list .node{display:block}

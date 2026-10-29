@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- /matchflow and /capeflow are the apps' own canonical addresses (each app's canonical tag points here); they forward to the app host.
+  <!-- The apps live on matchflow.theharnessproject.org and capeflow.theharnessproject.org, so they are not listed here.
        /hub is left out on purpose: the Educators Hub is licensed and its landing page is noindex. -->
-  <url><loc>https://theharnessproject.org/matchflow</loc><lastmod>2026-10-25</lastmod></url>
-  <url><loc>https://theharnessproject.org/capeflow</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://theharnessproject.org/about</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/doxy-pep-backup</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/fries-consent-checks</loc><lastmod>2026-10-21</lastmod></url>
