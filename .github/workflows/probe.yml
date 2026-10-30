@@ -7,10 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          {
           for h in theharnessproject.org www.theharnessproject.org harnessproject.pages.dev; do
-            echo "=== DNS $h"; dig +short $h A; dig +short $h CNAME; dig +short NS ${h#www.}
+            echo "DNS $h A=[$(dig +short $h A | tr '\n' ' ')] CNAME=[$(dig +short $h CNAME | tr '\n' ' ')]"
           done
-          dig +short NS theharnessproject.org
-          for u in https://theharnessproject.org/ https://www.theharnessproject.org/ https://harnessproject.pages.dev/ https://theharnessproject.org/cape/ https://harnessproject.pages.dev/cape/; do
-            echo "=== $u"; curl -sS -m 20 -o /tmp/b -D - "$u" | head -25; echo "--- body:"; head -c 400 /tmp/b; echo
+          echo "NS=[$(dig +short NS theharnessproject.org | tr '\n' ' ')]"
+          for u in https://theharnessproject.org/ https://www.theharnessproject.org/ https://harnessproject.pages.dev/ https://theharnessproject.org/cape/ https://harnessproject.pages.dev/cape/ https://e98153f.harnessproject.pages.dev/; do
+            st=$(curl -sS -m 20 -o /tmp/b -D /tmp/h -w '%{http_code} %{redirect_url}' "$u" 2>&1)
+            echo "URL $u -> $st | $(grep -i '^\(server\|location\|cf-ray\|content-type\|cf-cache\)' /tmp/h | tr -d '\r' | tr '\n' ' ') | body: $(head -c 250 /tmp/b | tr '\n' ' ')"
           done
+          } > out.txt
+          python3 - <<'PY'
+          import urllib.parse
+          s=open('out.txt').read()
+          for chunk in [s[i:i+3500] for i in range(0,len(s),3500)]:
+              print('::warning::'+chunk.replace('%','%25').replace('\n','%0A'))
+          PY
