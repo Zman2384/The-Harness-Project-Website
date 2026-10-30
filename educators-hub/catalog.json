@@ -49,8 +49,8 @@
       "use": "Facilitators",
       "src": "CAPE_Youth_Edition_v3.1_Facilitator_Edition.pdf",
       "mime": "application/pdf",
-      "bytes": 3891212,
-      "sha256": "19bb11bd854f9fb6"
+      "bytes": 2124164,
+      "sha256": "db894b6495316ec6"
     },
     {
       "id": "cape-task-cards",
@@ -60,9 +60,9 @@
       "desc": "One card per lesson for all 18 lessons: objectives, the five-step sequence, the takeaway, and the one thing that tends to go wrong. Green and Blue Track marked.",
       "use": "Facilitators",
       "src": "cape-task-cards.html",
-      "bytes": 111811,
+      "bytes": 111728,
       "mime": "text/html",
-      "sha256": "29081e41cd791c0c"
+      "sha256": "78aa2f86c9fa8843"
     },
     {
       "id": "cape-activity-handouts",
@@ -72,9 +72,9 @@
       "desc": "The 18 reproducible worksheets the curriculum names, one full page per lesson, including the four-tier Boundary Menu, the Trusted Adults List and My Health Team.",
       "use": "Students",
       "src": "cape-activity-handouts.html",
-      "bytes": 68596,
+      "bytes": 68513,
       "mime": "text/html",
-      "sha256": "750abbf561cccdfe"
+      "sha256": "9e1babde93778b07"
     },
     {
       "id": "cape-scenario-cards",
@@ -84,9 +84,9 @@
       "desc": "A cut-apart deck for every lesson: 18 decks, 122 cards, four to a page with dashed cut lines.",
       "use": "Students",
       "src": "cape-scenario-cards.html",
-      "bytes": 97944,
+      "bytes": 97861,
       "mime": "text/html",
-      "sha256": "e98d900946a5feea"
+      "sha256": "2e0bd8d152ec60bf"
     },
     {
       "id": "cape-posters",
@@ -96,9 +96,9 @@
       "desc": "One poster per lesson with the key takeaway at wall-reading size, including the MATCH Compass and the CAPE Promise.",
       "use": "Classroom",
       "src": "cape-posters.html",
-      "bytes": 95679,
+      "bytes": 95596,
       "mime": "text/html",
-      "sha256": "e2f3e18a5e98a2fa"
+      "sha256": "84b85c5d608324a6"
     },
     {
       "id": "cape-consent-cafe",
@@ -169,8 +169,8 @@
       "use": "Facilitators",
       "src": "HARNESS_Adult_Track_v2.1_Facilitator_Edition.pdf",
       "mime": "application/pdf",
-      "bytes": 2151132,
-      "sha256": "4ccb62da8cb5c131"
+      "bytes": 2150846,
+      "sha256": "092069ac0761441a"
     },
     {
       "id": "harness-print-suite",
