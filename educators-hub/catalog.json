@@ -19,6 +19,7 @@
     }
   },
   "kinds": {
+    "edition": "Full edition",
     "guide": "Guide",
     "print": "Print set",
     "cards": "Cards",
@@ -38,6 +39,18 @@
       "bytes": 19046,
       "mime": "text/html",
       "sha256": "15384d9727b34651"
+    },
+    {
+      "id": "cape-edition",
+      "program": "cape",
+      "kind": "edition",
+      "title": "CAPE Youth Edition v3.1 · Facilitator Edition",
+      "desc": "The complete book in one PDF: curriculum and lesson plans for all 18 lessons, tracks, compliance and ground rules, delivery models, plus every task card, scenario card, activity handout and classroom poster. Bookmarked by module.",
+      "use": "Facilitators",
+      "src": "CAPE_Youth_Edition_v3.1_Facilitator_Edition.pdf",
+      "mime": "application/pdf",
+      "bytes": 3891212,
+      "sha256": "19bb11bd854f9fb6"
     },
     {
       "id": "cape-task-cards",
@@ -146,6 +159,18 @@
       "bytes": 60011,
       "mime": "text/html",
       "sha256": "df2c26645b90550b"
+    },
+    {
+      "id": "harness-edition",
+      "program": "harness",
+      "kind": "edition",
+      "title": "HARNESS Adult Track v2.1 · Facilitator Edition",
+      "desc": "The complete book in one PDF: curriculum map, all 19 lesson plans across six modules, delivery models, the full print suite, Appendices A–E reproducible forms, Scenario Cards L01–L19 and the Lesson 14 Constraint Cards. Bookmarked by module.",
+      "use": "Facilitators",
+      "src": "HARNESS_Adult_Track_v2.1_Facilitator_Edition.pdf",
+      "mime": "application/pdf",
+      "bytes": 2151132,
+      "sha256": "4ccb62da8cb5c131"
     },
     {
       "id": "harness-print-suite",
