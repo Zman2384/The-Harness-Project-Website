@@ -1,0 +1,16 @@
+name: probe
+on:
+  push:
+    branches: [claude/site-probe]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for h in theharnessproject.org www.theharnessproject.org harnessproject.pages.dev; do
+            echo "=== DNS $h"; dig +short $h A; dig +short $h CNAME; dig +short NS ${h#www.}
+          done
+          dig +short NS theharnessproject.org
+          for u in https://theharnessproject.org/ https://www.theharnessproject.org/ https://harnessproject.pages.dev/ https://theharnessproject.org/cape/ https://harnessproject.pages.dev/cape/; do
+            echo "=== $u"; curl -sS -m 20 -o /tmp/b -D - "$u" | head -25; echo "--- body:"; head -c 400 /tmp/b; echo
+          done
