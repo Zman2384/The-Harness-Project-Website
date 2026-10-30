@@ -12,9 +12,10 @@ jobs:
             echo "DNS $h A=[$(dig +short $h A | tr '\n' ' ')] CNAME=[$(dig +short $h CNAME | tr '\n' ' ')]"
           done
           echo "NS=[$(dig +short NS theharnessproject.org | tr '\n' ' ')]"
-          for u in https://theharnessproject.org/ https://www.theharnessproject.org/ https://harnessproject.pages.dev/ https://theharnessproject.org/cape/ https://harnessproject.pages.dev/cape/ https://e98153f.harnessproject.pages.dev/; do
-            st=$(curl -sS -m 20 -o /tmp/b -D /tmp/h -w '%{http_code} %{redirect_url}' "$u" 2>&1)
-            echo "URL $u -> $st | $(grep -i '^\(server\|location\|cf-ray\|content-type\|cf-cache\)' /tmp/h | tr -d '\r' | tr '\n' ' ') | body: $(head -c 250 /tmp/b | tr '\n' ' ')"
+          UA="Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
+          for u in https://www.theharnessproject.org/ https://www.theharnessproject.org/robots.txt https://theharnessproject.org/robots.txt; do
+            st=$(curl -sS -m 20 -A "$UA" -o /tmp/b -D /tmp/h -w '%{http_code} %{redirect_url}' "$u" 2>&1)
+            echo "URL $u -> $st | $(grep -i '^\(server\|location\|cf-mitigated\|content-type\)' /tmp/h | tr -d '\r' | tr '\n' ' ') | title: $(grep -o '<title>[^<]*' /tmp/b | head -1)"
           done
           } > out.txt
           python3 - <<'PY'
