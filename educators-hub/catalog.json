@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "editions": {
     "cape": "CAPE Youth Edition v3.1",
     "harness": "HARNESS Adult Track v2.1"
@@ -165,12 +165,12 @@
       "program": "harness",
       "kind": "edition",
       "title": "HARNESS Adult Track v2.1 · Facilitator Edition",
-      "desc": "The complete book in one PDF: curriculum map, all 19 lesson plans across six modules, delivery models, the full print suite, Appendices A–E reproducible forms, Scenario Cards L01–L19 and the Lesson 14 Constraint Cards. Bookmarked by module.",
+      "desc": "The complete book in one PDF: curriculum map, all 19 lesson plans across six modules and the delivery models, then the full resource set: print & assembly guide, activity handouts, stress-test dossiers, scenario cards, constraint cards, posters, ghost cards and task cards for all 19 lessons, the MATCH Framework facilitator kit, Appendices A–E, the Stress Test Scenario Cards and the Quotes & Visuals Pack. Bookmarked by section.",
       "use": "Facilitators",
       "src": "HARNESS_Adult_Track_v2.1_Facilitator_Edition.pdf",
       "mime": "application/pdf",
-      "bytes": 2150846,
-      "sha256": "092069ac0761441a"
+      "bytes": 10217029,
+      "sha256": "08e93280bf707a86"
     },
     {
       "id": "harness-print-suite",
