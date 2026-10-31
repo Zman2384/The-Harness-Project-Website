@@ -26,7 +26,8 @@
       return;}
   });
   /* Same-document navigation: in sandboxed/srcdoc previews, "/route" links would otherwise resolve against the parent URL and navigate away. */
-  document.addEventListener('click',function(e){
+  /* On the real multi-page site (http/https) every route is its own page, so links must load normally. */
+  if(!/^https?:$/.test(location.protocol))document.addEventListener('click',function(e){
     if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
     var a=e.target&&e.target.closest?e.target.closest('a[href^="/"]'):null;if(!a)return;
     e.preventDefault();var h=a.getAttribute('href');
