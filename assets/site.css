@@ -1293,11 +1293,14 @@ section[id],div[id]{scroll-margin-top:84px}
 .ov-eyebrow{font:700 12px/1.3 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin:0 0 12px}
 .ov-light .ov-eyebrow{color:var(--cape-c-ink)}
 .ov-car{position:relative;max-width:1140px}
-.ov-track{list-style:none;margin:0;padding:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border:1px solid var(--line);border-radius:6px;background:var(--navy-deep);aspect-ratio:16/9}
-.ov-track::-webkit-scrollbar{display:none}
-.ov-light .ov-track{border-color:#D9CFB8;background:#F8F3E7}
-.ov-slide{flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always}
-.ov-slide img{display:block;width:100%;height:100%;object-fit:cover}
+.ov-view{overflow:hidden;border:1px solid var(--line);border-radius:6px;background:var(--navy-deep);aspect-ratio:16/9;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.ov-view:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.ov-light .ov-view{border-color:#D9CFB8;background:#F8F3E7}
+.ov-light .ov-view:focus-visible{outline-color:var(--cape-c-ink)}
+.ov-track{list-style:none;margin:0;padding:0;display:flex;height:100%;transition:transform .6s cubic-bezier(.22,.61,.36,1);will-change:transform}
+.ov-track.is-dragging{transition:none}
+.ov-slide{flex:0 0 100%;min-width:0;height:100%}
+.ov-slide img{display:block;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
 .ov-ctrl{display:flex;align-items:center;gap:8px;margin-top:12px}
 .ov-btn{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
 .ov-btn svg{width:20px;height:20px}
@@ -1314,4 +1317,4 @@ section[id],div[id]{scroll-margin-top:84px}
 .ov-light .ov-bar span{background:var(--cape-c-ink)}
 .ov-car.is-running .ov-bar span{animation:ov-fill var(--ov-ms,6000ms) linear forwards}
 @keyframes ov-fill{from{width:0}to{width:100%}}
-@media (prefers-reduced-motion:reduce){.ov-track{scroll-behavior:auto}.ov-bar{display:none}}
+@media (prefers-reduced-motion:reduce){.ov-track{transition:none}.ov-bar{display:none}}
