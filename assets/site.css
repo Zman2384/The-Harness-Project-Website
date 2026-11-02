@@ -1288,3 +1288,30 @@ section[id],div[id]{scroll-margin-top:84px}
 .cape-watch img{width:100%;height:auto;display:block}
 .cape-watch figcaption{display:flex;justify-content:space-between;gap:16px;margin-top:10px;font:700 12px/1.35 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cape-c-ink)}
 .cape-watch figcaption span:last-child{text-align:right}
+/* Book overview carousels (Books & apps) */
+.ov{margin-top:clamp(36px,5vw,56px)}
+.ov-eyebrow{font:700 12px/1.3 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin:0 0 12px}
+.ov-light .ov-eyebrow{color:var(--cape-c-ink)}
+.ov-car{position:relative;max-width:1140px}
+.ov-track{list-style:none;margin:0;padding:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border:1px solid var(--line);border-radius:6px;background:var(--navy-deep);aspect-ratio:16/9}
+.ov-track::-webkit-scrollbar{display:none}
+.ov-light .ov-track{border-color:#D9CFB8;background:#F8F3E7}
+.ov-slide{flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always}
+.ov-slide img{display:block;width:100%;height:100%;object-fit:cover}
+.ov-ctrl{display:flex;align-items:center;gap:8px;margin-top:12px}
+.ov-btn{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.ov-btn svg{width:20px;height:20px}
+.ov-btn:hover{border-color:var(--cyan)}
+.ov-light .ov-btn{background:#FFFDF7;border-color:#D9CFB8;color:var(--cape-ink)}
+.ov-light .ov-btn:hover{border-color:var(--cape-c-ink)}
+.ov-play .i-play,.ov-car.is-paused .ov-play .i-pause{display:none}
+.ov-car.is-paused .ov-play .i-play{display:inline}
+.ov-count{font:700 13px/1 var(--mono);color:var(--muted);margin:0 6px;min-width:56px;text-align:center;font-variant-numeric:tabular-nums}
+.ov-light .ov-count{color:var(--cape-muted)}
+.ov-bar{height:3px;background:var(--line);border-radius:2px;margin-top:10px;overflow:hidden}
+.ov-light .ov-bar{background:#E3DAC4}
+.ov-bar span{display:block;height:100%;width:0;background:var(--cyan)}
+.ov-light .ov-bar span{background:var(--cape-c-ink)}
+.ov-car.is-running .ov-bar span{animation:ov-fill var(--ov-ms,6000ms) linear forwards}
+@keyframes ov-fill{from{width:0}to{width:100%}}
+@media (prefers-reduced-motion:reduce){.ov-track{scroll-behavior:auto}.ov-bar{display:none}}
