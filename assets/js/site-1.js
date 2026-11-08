@@ -353,7 +353,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
     {
       slug: "doxy-pep-backup",
       title: "Doxy-PEP: a 72-hour backup for bacterial STIs",
-      audience: "adult", date: "2026-10-16", updated: "2026-10-26", hero: "doxy",
+      audience: "adult", date: "2026-10-16", updated: "2026-11-08", hero: "doxy",
       heroAlt: "A glowing capsule over a starfield and grid floor, with three signal bars labeled syphilis, chlamydia and gonorrhea.",
       question: "If your provider offered doxy-PEP tomorrow, what's one question you'd want answered before you said yes?", comments: [],
       excerpt: "You had sex without a condom last night, and you've had an STI this year. Doxy-PEP is a backup with a clock on it. Here's how it works.",
@@ -376,7 +376,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
 <ul>
 <li><b>What it reduces:</b> in clinical trials, syphilis by about 80–87% and chlamydia by about 87–88% (CDC, 2024).</li>
 <li><b>The gonorrhea gap:</b> early trials showed partial protection against gonorrhea. A large Kaiser Permanente Southern California study (<i>The Lancet Infectious Diseases</i>, May 2026) found no measurable gonorrhea benefit by 2025 as resistant strains spread. Protection against chlamydia and syphilis held.</li>
-<li><b>If you do get gonorrhea:</b> it's still treatable. CDC's recommended treatment is still a single ceftriaxone shot. Two oral antibiotics approved in December 2025 are reserved for people who can't use the standard treatment.</li>
+<li><b>If you do get gonorrhea:</b> it's still treatable. CDC's recommended treatment is still a single ceftriaxone shot. Two oral antibiotics approved in December 2025, zoliflodacin (Nuzolvence) and gepotidacin (Blujepa), are reserved for people who can't use the standard treatment.</li>
 <li><b>What it doesn't touch:</b> HIV, mpox, herpes, or HPV. Keep PrEP, vaccines, and condoms in your plan.</li>
 <li><b>Who it's recommended for:</b> CDC recommends it for gay and bisexual men and transgender women who've had syphilis, chlamydia, or gonorrhea in the past 12 months. If that's not you, ask your provider whether it fits your situation.</li>
 </ul>
@@ -1173,7 +1173,9 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
       return;
     }
     var match;
-    if (r.path.indexOf('/blog/') === 0) { renderPost(decodeURIComponent(r.path.slice(6))); match = document.getElementById('post-page'); }
+    var notFound = pages.filter(function(p){ return p.getAttribute('data-route') === '/404'; })[0];
+    if (notFound) { match = notFound; var nfp = document.getElementById('nf-path'); if (nfp) nfp.textContent = 'Address: ' + location.pathname; }
+    else if (r.path.indexOf('/blog/') === 0 && document.getElementById('post-page')) { renderPost(decodeURIComponent(r.path.slice(6))); match = document.getElementById('post-page'); }
     else match = pages.filter(function(p){ return p.getAttribute('data-route') === r.path; })[0] || pages[0];
     if (r.path === '/blog') { if (r.query.lane && AUD[r.query.lane]) { currentFilter = r.query.lane; document.querySelectorAll('.filters [data-filter]').forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-filter') === currentFilter ? 'true' : 'false'); }); } renderBlogIndex(); }
     pages.forEach(function(p){ p.hidden = (p !== match); }); var mh = document.querySelector('.masthead'); if (mh) mh.hidden = (match.getAttribute('data-route') !== '/');
