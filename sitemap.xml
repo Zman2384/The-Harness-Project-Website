@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- /matchflow and /capeflow forward to the hosted apps, so they are not listed here.
+  <!-- The apps live on matchflow.theharnessproject.org and capeflow.theharnessproject.org, so they are not listed here.
        /hub is left out on purpose: the Educators Hub is licensed and its landing page is noindex. -->
   <url><loc>https://theharnessproject.org/about</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://theharnessproject.org/blog/doxy-pep-backup</loc><lastmod>2026-11-08</lastmod></url>
