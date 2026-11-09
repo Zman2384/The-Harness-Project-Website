@@ -1243,8 +1243,9 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
   }
   var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(drawStars, 150); });
 
-  // Forms compose an email in the visitor's mail app. Because that depends on the
-  // visitor having a mail app set up, every send also shows a copy-and-send fallback.
+  // Contact, pricing and pilot forms post to /api/contact (functions/api/contact.js),
+  // which emails the inbox. If that endpoint isn't set up or fails, they fall back to
+  // composing an email in the visitor's mail app, with a copy-and-send fallback.
   function copyText(text, btn){
     var done = function(){ var t = btn.textContent; btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = t; }, 1600); };
     if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(done, function(){ legacy(); }); return; }
@@ -1264,8 +1265,37 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
     box.querySelector('[data-copy="msg"]').addEventListener('click', function(){ copyText(full, this); });
     box.querySelector('[data-copy="addr"]').addEventListener('click', function(){ copyText(EMAIL, this); });
   }
+  var FORM_API = '/api/contact';
+  function sendForm(f, kind, d, status, fallback){
+    var btn = f.querySelector('button[type=submit]'), label = btn ? btn.textContent : '';
+    var payload = { kind: kind, page: location.pathname, t: Date.now() - Number(f.dataset.loaded || 0), website: d.get('website') || '' };
+    d.forEach(function(v, k){ if (k !== 'website') payload[k] = v; });
+    var topic = f.querySelector('#c-topic'); if (topic) payload.topic = topic.selectedOptions[0].text;
+    if (btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
+    if (status){ status.textContent = 'Sending…'; status.className = 'form-status'; }
+    fetch(FORM_API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+      .then(function(r){ return r.json().catch(function(){ return {}; }).then(function(j){ return { status: r.status, body: j }; }); })
+      .then(function(r){
+        if (r.body && r.body.ok) {
+          f.reset(); var fb = f.querySelector('.mail-fallback'); if (fb) fb.remove();
+          if (status){ status.textContent = (kind === 'pilot' ? 'Pilot request sent.' : 'Message sent.') + ' We reply within one business day.'; status.className = 'form-status'; }
+          return;
+        }
+        if (r.status === 400 && r.body && r.body.field) {
+          var el = f.querySelector('[name="' + r.body.field + '"]'); if (el) el.focus();
+          if (status){ status.textContent = r.body.field === 'email' ? 'Check your email address and try again.' : 'Fill in the required fields to continue.'; status.className = 'form-status err'; }
+          return;
+        }
+        fallback();
+      }, fallback)
+      .then(function(){ if (btn){ btn.disabled = false; btn.textContent = label; } });
+  }
   function bindForms(root){ root.querySelectorAll('form[data-mail]').forEach(function(f){
-    if (f.dataset.bound) return; f.dataset.bound = '1';
+    if (f.dataset.bound) return; f.dataset.bound = '1'; f.dataset.loaded = Date.now();
+    if (f.getAttribute('data-mail') !== 'signal' && !f.querySelector('[name=website]')) {
+      var hp = document.createElement('div'); hp.setAttribute('aria-hidden', 'true'); hp.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden';
+      hp.innerHTML = '<label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>'; f.appendChild(hp);
+    }
     f.addEventListener('submit', function(e){
       e.preventDefault();
       var status = f.querySelector('.form-status') || f.parentNode.querySelector('.form-status');
@@ -1294,9 +1324,12 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         ['name','email','organization','type','track','participants','start','message'].forEach(function(k){ lines.push(k.charAt(0).toUpperCase()+k.slice(1) + ': ' + (d.get(k)||'')); }); }
       else { subject = 'Website inquiry: ' + f.querySelector('#c-topic').selectedOptions[0].text;
         ['name','email','message'].forEach(function(k){ lines.push(k.charAt(0).toUpperCase()+k.slice(1) + ': ' + (d.get(k)||'')); }); }
-      window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
-      if (status){ status.textContent = 'Message ready. Send it from your email app to finish.'; status.className = 'form-status'; }
-      if (kind !== 'signal') mailFallback(f, subject, lines.join('\n'), kind === 'pilot' ? 'pilot request' : 'message');
+      var openMail = function(){
+        window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+        if (status){ status.textContent = 'Message ready. Send it from your email app to finish.'; status.className = 'form-status'; }
+        if (kind !== 'signal') mailFallback(f, subject, lines.join('\n'), kind === 'pilot' ? 'pilot request' : 'message');
+      };
+      if (kind === 'signal') openMail(); else sendForm(f, kind, d, status, openMail);
     });
   }); }
   bindForms(document);

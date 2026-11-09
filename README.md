@@ -23,6 +23,18 @@ add a **Secret** `ANTHROPIC_API_KEY` (from console.anthropic.com), then redeploy
 (default `claude-sonnet-5-5`). Without the key the app keeps using its on-device answers.
 Persona and rules: `functions/api/_lilz-persona.js`. Nothing is stored or logged.
 
+## Website forms (`/api/contact`)
+The Contact, Pricing and Partners (pilot) forms post to `functions/api/contact.js`, which emails each
+submission to email@theharnessproject.org through Resend, with Reply-To set to the visitor.
+One-time setup:
+1. resend.com -> Domains -> add `theharnessproject.org` and add the DNS records it lists in Cloudflare DNS.
+2. Resend -> API Keys -> create a key (Sending access).
+3. Workers & Pages -> this project -> Settings -> Variables and Secrets -> add a **Secret** `RESEND_API_KEY`, then redeploy.
+Optional variables: `FORM_TO` (inbox, default email@theharnessproject.org), `FORM_FROM`
+(default `The HARNESS Project Website <forms@theharnessproject.org>`).
+Until the key is set, or if sending fails, the forms fall back to opening the visitor's email app.
+Spam: hidden honeypot field plus a minimum fill time. Nothing is stored or logged.
+
 ## Educators Hub library (`/educators-hub/`)
 The paid library facilitators sign in to. `/hub` is the public page that describes it.
 The site is static, so the gate is encryption: every file in `educators-hub/vault/` is AES-256-GCM
