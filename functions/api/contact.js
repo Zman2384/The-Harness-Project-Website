@@ -10,7 +10,7 @@
  * Variables and Secrets →
  *   RESEND_API_KEY  (Secret, required)  from resend.com → API Keys
  *   FORM_TO         (optional)          inbox that receives submissions; default email@theharnessproject.org
- *   FORM_FROM       (optional)          sender; default "The HARNESS Project Website <forms@theharnessproject.org>"
+ *   FORM_FROM       (optional)          sender; default "The HARNESS Project Website <forms@mail.theharnessproject.org>"
  *                                       (the domain must be verified in Resend → Domains)
  * then redeploy. Until RESEND_API_KEY is set, GET reports { live: false } and the
  * browser falls back to the old open-your-email-app flow, so the forms never dead-end.
@@ -26,7 +26,7 @@
  */
 
 const DEFAULT_TO = 'email@theharnessproject.org';
-const DEFAULT_FROM = 'The HARNESS Project Website <forms@theharnessproject.org>';
+const DEFAULT_FROM = 'The HARNESS Project Website <forms@mail.theharnessproject.org>';
 const MAX_BODY_BYTES = 32 * 1024;
 const MIN_FILL_MS = 2500; // faster than this is a bot
 const EMAIL_RE = /^[^\s@<>"']{1,64}@[^\s@<>"']{1,190}\.[A-Za-z]{2,}$/;
