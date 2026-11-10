@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-10",
   "editions": {
     "cape": "CAPE Youth Edition v3.1",
     "harness": "HARNESS Adult Track v2.1"
@@ -189,12 +189,12 @@
       "program": "harness",
       "kind": "reference",
       "title": "Interactive Activities Hub",
-      "desc": "Every learning objective, activity and takeaway in one searchable guide, with progress tracking and the five v2.1 workshop delivery models.",
+      "desc": "All 19 lessons across 6 modules in one searchable guide: objectives, activities and takeaways, the canonical sixteen ghosts, the five v2.1 delivery models and Appendices A–E.",
       "use": "Facilitators",
       "src": "harness-activities-hub.html",
-      "bytes": 86900,
+      "bytes": 95551,
       "mime": "text/html",
-      "sha256": "e141c0ebac05ac5a"
+      "sha256": "5f142473d66f9aa0"
     },
     {
       "id": "harness-activities",
@@ -213,24 +213,24 @@
       "program": "harness",
       "kind": "print",
       "title": "Complete Participant Handouts",
-      "desc": "Full-length participant handouts with the reference content: STI and vaccine tables, the PEP hour table, the Doxy-PEP evidence, U=U language practice and testing timelines.",
+      "desc": "Participant handouts for all 19 lessons (v2.1), including the MATCH Framework, the PEP hour table, corrected Doxy-PEP figures, window periods, the Ghost Catalogue, Build Your MATCH Plan and the 30-Day Fearless Challenge.",
       "use": "Participants",
       "src": "harness-handouts.html",
-      "bytes": 120400,
+      "bytes": 102324,
       "mime": "text/html",
-      "sha256": "99859b4f8b0b25cb"
+      "sha256": "ab4e5c8a43fd4646"
     },
     {
       "id": "harness-task-scenario-cards",
       "program": "harness",
       "kind": "cards",
       "title": "Task & Scenario Cards",
-      "desc": "Facilitator task cards, participant cards and role-play scenario cards by module, filterable by card type.",
+      "desc": "The v2.1 card deck: the canonical sixteen Ghost Prompt Cards, Stress-Test Dossiers A–H, the four Lesson 14 Constraint Cards, and a facilitator card for all 19 lessons. Replaces the old ghost deck.",
       "use": "Facilitators + participants",
       "src": "harness-task-scenario-cards.html",
-      "bytes": 113513,
+      "bytes": 23257,
       "mime": "text/html",
-      "sha256": "7f11f9ea1e640432"
+      "sha256": "f51c5603923a271c"
     },
     {
       "id": "harness-activity-cards-handouts",
