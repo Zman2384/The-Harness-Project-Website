@@ -38,6 +38,69 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
   };
   var POSTS = [
     {
+      slug: "the-location-request",
+      title: "The Location Request: when \"share your location\" isn't about safety",
+      audience: "youth", date: "2026-11-10", hero: "location",
+      heroAlt: "A phone on graph paper showing the text \"share ur location. if u have nothing to hide\" with a location-sharing switch turned off, a map pin, the words \"Your location, your call\" and \"Built-In Radar\", beside the CAPE crest.",
+      excerpt: "Someone you're talking to wants your location 24/7, and \"no\" feels like a breakup. Here's how to tell safety from control, and what to say.",
+      hookTime: "SUN · 11:42 P.M.",
+      hook: `
+<p>You're half asleep when your phone lights up. It's the person you've been talking to for a month. Someone you actually like.</p>
+<blockquote>"why'd you turn off your location? if you have nothing to hide, turn it back on."</blockquote>
+<p>Three more texts land before you can answer. "??" "hello" "so you're hiding something."</p>
+<p>Your stomach drops. Turning it back on would make the texts stop. Saying no feels like it could end everything. And part of you wonders: maybe this is just what caring looks like?</p>`,
+      pivot: "CAPE Decision GPS",
+      body: `
+<h2>Name the Ghosts</h2>
+<p>Ghosts are the fears that make a bad choice feel like the only choice. Name them and you get your choice back.</p>
+<ul>
+<li><b>It Means They Care:</b> "They just worry about me." Caring sounds like "text me when you're home." Control sounds like "I need to see where you are, all the time."</li>
+<li><b>Nothing to Hide:</b> "If I say no, it looks like I'm guilty." Privacy isn't guilt. Everybody gets some.</li>
+<li><b>Rejection:</b> "If I don't, they'll leave." Someone who leaves over a boundary was never on your team.</li>
+<li><b>Overreacting:</b> "It's just an app setting." It's not the setting. It's the pressure.</li>
+</ul>
+<h2>Safety or control? Run three checks</h2>
+<p>Sharing your location isn't automatically bad. Lots of families share locations so someone knows you got home. The difference is how the request shows up. Before you share, ask three questions.</p>
+<ol>
+<li><b>Why are they asking?</b> A safety reason sounds like "so I know you got home from practice." A control reason sounds like "so I know who you're with."</li>
+<li><b>Can you say no without paying for it?</b> If "no" gets you guilt, a pile of texts, or the silent treatment, that's pressure, not care.</li>
+<li><b>Can you turn it off later?</b> Run it through FRIES. Your yes has to be <b>Freely given</b> and <b>Reversible</b>. If turning it off starts a fight, it was never really your choice.</li>
+</ol>
+<div class="callout"><p style="margin:0"><b>The rule:</b> safety is something you agree to. Control is something you're pressured into. Any "not sure" means don't share tonight.</p></div>
+<h2>What control looks like on a phone</h2>
+<p>Experts who run the national youth dating helpline list these as forms of digital abuse: tracking where you are, pressuring you for your passwords, going through your phone, texting nonstop so you can't put it down, and telling you who you can follow or talk to (<a href="https://www.loveisrespect.org/resources/types-of-abuse/" target="_blank" rel="noopener">love is respect</a>). Their rule is simple: you never have to share your passwords with anyone, and you don't have to answer messages right away.</p>
+<p>This isn't rare, and it isn't only an adult thing. The CDC counts using words or texts to control a partner as a form of teen dating violence, and in its 2021 national survey about 1 in 12 high school students who dated had experienced physical dating violence in the past year (<a href="https://www.cdc.gov/intimate-partner-violence/about/about-teen-dating-violence.html" target="_blank" rel="noopener">CDC</a>). Control usually starts small, like one setting, one password, one "just turn it on." That's why your radar matters early.</p>
+<h2>Say it in one line</h2>
+<p>You don't need a speech, and you don't need to win the argument. Pick a line you've practiced.</p>
+<div class="callout"><p style="margin:0"><b>Say it:</b> "I like you. I'm still not sharing my location. If that's a dealbreaker, that tells me something."</p></div>
+<ul>
+<li>"My location is for my family. That's not about you."</li>
+<li>"I'll text you when I'm home. That's what I'm comfortable with."</li>
+<li>"I'm going to sleep. We can talk tomorrow."</li>
+</ul>
+<blockquote>You don't owe anyone a 24/7 view of your life to prove you're trustworthy.</blockquote>
+<h2>Check your MATCH Compass</h2>
+<ul>
+<li><b>Health Armor:</b> how someone treats you is part of your health, online and off.</li>
+<li><b>Built-In Radar:</b> constant check-ins, "nothing to hide" guilt, and anger when you go quiet are three warning signs.</li>
+<li><b>Safety Kit:</b> 3–5 trusted adults on speed dial, and at least one who knows what's going on.</li>
+<li><b>Strongest Voice:</b> one line, said once. Then put the phone down.</li>
+<li><b>Daily Superpower:</b> once a month, check which apps can see your location and who chose that.</li>
+</ul>
+<h2>If it keeps going</h2>
+<ol>
+<li><b>Don't decide at midnight.</b> Pressure wants an answer now. You can answer tomorrow, or not at all.</li>
+<li><b>Save the messages for an adult, not the group chat.</b> Screenshots help a trusted adult or school counselor see the pattern. Adults at school may need to bring in others to help keep you safe, and that's part of how they help.</li>
+<li><b>Lock your phone back down.</b> If you already shared a password or your location, change the password and turn sharing off once you're somewhere safe.</li>
+<li><b>Talk to someone trained.</b> <a href="https://www.loveisrespect.org/get-relationship-help-24-7-365/" target="_blank" rel="noopener">love is respect</a> is confidential and open 24/7: call 1-866-331-9474, text LOVEIS to 22522, or chat online.</li>
+</ol>
+<div class="callout"><p style="margin:0"><b>If you're ever afraid of what someone will do,</b> or they threaten you, call 911 and tell a trusted adult right away.</p></div>`,
+      takeaway: "Safety is something you agree to. Control is something you're pressured into. If you can't say no without paying for it, it isn't about safety.",
+      closing: `<p>The 11:42 p.m. text wants you to believe that saying yes is how you prove you're a good partner. It isn't. Your location, your passwords and your time are yours, and the right person will respect your answer. You're the navigator. Your CAPE is the compass.</p>`,
+      reflect: "Which apps can see where you are right now, and who decided that: you, your family, or someone else?",
+      reflectNote: "Families: if you share locations as a family, talk tonight about why, and how that's different from someone your teen is dating asking for it. Listen first. This mirrors CAPE Lesson 3, Healthy vs. Unhealthy Relationships & Red Flags."
+    },
+    {
       slug: "the-cost-ghost",
       title: "The Cost ghost: staying on PrEP when money is tight",
       audience: "adult", date: "2026-10-18", hero: "costghost",
@@ -838,6 +901,32 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<text x="82" y="248" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#1D6F66" letter-spacing="3">BYSTANDER → UPSTANDER</text>' +
         '<image href="' + LANE_ART.CREST_YOUTH + '" x="880" y="40" width="240" height="251"/>' +
         '<text x="1000" y="360" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#1D6F66" letter-spacing="4">THE BOUNDARY SHIELD</text>';
+    },
+    location: function(){
+      var grid = '';
+      for (var x=0;x<=1200;x+=24) grid += '<line x1="'+x+'" y1="0" x2="'+x+'" y2="675" stroke="#2A9D8F" stroke-opacity="'+(x%120===0?.26:.11)+'" stroke-width="1"/>';
+      for (var y=0;y<=675;y+=24) grid += '<line x1="0" y1="'+y+'" x2="1200" y2="'+y+'" stroke="#2A9D8F" stroke-opacity="'+(y%120===0?.26:.11)+'" stroke-width="1"/>';
+      return '<rect width="1200" height="675" fill="#F6F1E4"/>' + grid +
+        '<circle cx="190" cy="470" r="120" fill="none" stroke="#2A9D8F" stroke-width="2" stroke-dasharray="6 10"/>' +
+        '<circle cx="190" cy="470" r="70" fill="none" stroke="#C29B38" stroke-width="2"/>' +
+        '<path d="M190 380c-36 0-62 27-62 60 0 46 62 106 62 106s62-60 62-106c0-33-26-60-62-60z" fill="#A6387E"/><circle cx="190" cy="440" r="21" fill="#fff"/>' +
+        '<line x1="120" y1="380" x2="262" y2="560" stroke="#16324F" stroke-width="7" stroke-linecap="round"/>' +
+        '<rect x="420" y="70" width="270" height="520" rx="38" fill="#16324F"/><rect x="436" y="100" width="238" height="460" rx="22" fill="#FFFDF7"/>' +
+        '<text x="555" y="150" text-anchor="middle" font-family="Space Mono, monospace" font-size="34" font-weight="700" fill="#16324F">11:42</text>' +
+        '<rect x="456" y="178" width="198" height="84" rx="16" fill="#F1E7CF"/>' +
+        '<text x="472" y="212" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#16324F">share ur location.</text>' +
+        '<text x="472" y="240" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#16324F">if u have nothing</text>' +
+        '<rect x="456" y="268" width="130" height="44" rx="16" fill="#F1E7CF"/><text x="472" y="297" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#16324F">to hide</text>' +
+        '<rect x="456" y="318" width="70" height="44" rx="16" fill="#F1E7CF"/><text x="472" y="347" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#16324F">??</text>' +
+        '<rect x="456" y="404" width="198" height="120" rx="16" fill="#E9F4F2" stroke="#2A9D8F" stroke-width="2"/>' +
+        '<text x="474" y="440" font-family="Space Mono, monospace" font-size="15" font-weight="700" fill="#1D6F66">SHARE LOCATION</text>' +
+        '<rect x="474" y="458" width="88" height="44" rx="22" fill="#C9B98F"/><circle cx="497" cy="480" r="18" fill="#fff"/>' +
+        '<text x="578" y="488" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#16324F">OFF</text>' +
+        '<text x="80" y="140" font-family="Playfair Display, Georgia, serif" font-size="46" font-weight="700" fill="#16324F">Your location,</text>' +
+        '<text x="80" y="204" font-family="Playfair Display, Georgia, serif" font-size="46" font-weight="700" fill="#16324F">your call</text>' +
+        '<text x="82" y="248" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#1D6F66" letter-spacing="3">SAFETY ≠ CONTROL</text>' +
+        '<image href="' + LANE_ART.CREST_YOUTH + '" x="880" y="40" width="240" height="251"/>' +
+        '<text x="1000" y="360" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#1D6F66" letter-spacing="4">BUILT-IN RADAR</text>';
     },
     phoneplan: function(){
       var grid = '';
