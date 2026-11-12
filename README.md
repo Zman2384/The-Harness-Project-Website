@@ -1,10 +1,11 @@
 # theharnessproject.org
 
-Static multi-page site. No build step: every folder's index.html is a page.
+Static multi-page site. No build step: every `.html` file is a page, served without the extension.
 
-- `/index.html` home; `/cape/`, `/harness/`, `/partners/`, `/hub/` ... one folder per page
-- `/blog/<post>/` one folder per blog post (post text lives in `assets/js/site-1.js`, POSTS list)
-  - The script re-renders each post when it loads; the post's `index.html` holds the same markup for search engines and no-JS visitors, so update both together.
+- `/index.html` home; `cape.html`, `harness.html`, `partners.html`, `hub.html` ... one file per page, served at `/cape`, `/harness` ...
+  - Keep pages as `<name>.html`, not `<name>/index.html`: Cloudflare Pages redirects `/name` to `/name/` for folder pages, which clashes with the canonical tags and sitemap (no trailing slash) and keeps Google from indexing them.
+- `blog/<post>.html` one file per blog post (post text lives in `assets/js/site-1.js`, POSTS list)
+  - The script re-renders each post when it loads; the post's `.html` file holds the same markup for search engines and no-JS visitors, so update both together.
   - When a published post's text changes, set `updated: "YYYY-MM-DD"` on it (shows "Updated <date>" in the byline) and add the same `dateModified` to the post's structured data.
 - `assets/site.css` all styles; `assets/js/` scripts; `assets/img/` images; `assets/kits/` downloadable PDFs
 - `sitemap.xml`, `robots.txt`, `404.html`
