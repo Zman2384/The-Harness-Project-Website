@@ -23,7 +23,7 @@ def fingerprint(text):
     return hashlib.sha1((words + "\n" + "\n".join(keep)).encode()).hexdigest()
 
 def content_date(f):
-    commits = git("log", "--format=%H %cs", "--", f).split("\n")
+    commits = git("log", "--format=%H %cs", "--", f).split("\n")  # history starts at the Nov 2026 move from <page>/index.html
     commits = [c.split() for c in commits if c]
     if not commits:
         return None
@@ -35,7 +35,7 @@ def content_date(f):
 
 def page_file(loc):
     path = loc[len(SITE):].strip("/")
-    return f"{path}/index.html" if path else "index.html"
+    return f"{path}.html" if path else "index.html"
 
 sm = pathlib.Path("sitemap.xml")
 s = sm.read_text(encoding="utf-8")
