@@ -38,6 +38,65 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
   };
   var POSTS = [
     {
+      slug: "teen-sextortion-first-hour",
+      title: "The first hour: when your teen is being sextorted",
+      audience: "parent", date: "2026-11-15", hero: "sextortion",
+      heroAlt: "A phone on cream notebook paper showing a blackmail message demanding money, crossed out, beside three steps: don't pay, save it, report it, the words \"You're not in trouble\" and the Parents and Caregivers house crest.",
+      excerpt: "Your teen wakes you at 1 a.m.: someone has a photo and wants money. What to say first, what not to do, and who to call in the first hour.",
+      hookTime: "SAT · 1:09 A.M.",
+      hook: `
+<p>A knock, then your door opens. Your 15-year-old is standing there holding their phone, shaking, and can't get the words out at first.</p>
+<blockquote>"Someone has a picture of me. They want $500 by 3 a.m. or they send it to everyone I follow."</blockquote>
+<p>They already sent $50 an hour ago. It didn't stop anything. Now the messages arrive every minute, with screenshots of their friend list and your family's last name.</p>
+<p>Your brain splits in two: fury at whoever is doing this, and a question rising in your throat. <i>Why would you send that?</i> Whatever you say next decides whether your kid ever knocks on this door again.</p>`,
+      pivot: "CAPE Decision GPS",
+      body: `
+<h2>Name your Ghosts</h2>
+<p>Parents have ghosts too: fears that grab the wheel at 1 a.m. Name them before they steer.</p>
+<ul>
+<li><b>Blame:</b> "How could you be so careless?" Your teen already believes that. Hearing it from you is what makes kids stop telling.</li>
+<li><b>Pay It Away:</b> "Just send the money and make it stop." Paying rarely ends it. It tells the blackmailer your family pays.</li>
+<li><b>Erase It:</b> "Delete everything, block them, and pretend this never happened." Deleting destroys the evidence that can stop them.</li>
+<li><b>Keep It Quiet:</b> "Nobody can ever know." Silence is the blackmailer's whole plan. Reporting is how you take the power back.</li>
+</ul>
+<h2>What's actually happening</h2>
+<p>This is a crime, and your teen is the victim of it. In financial sextortion, someone poses as a teen online, gets a private image, then threatens to share it unless the victim pays. The FBI says victims are most often boys ages 14 to 17, but any child can be targeted. From October 2021 to March 2023 it counted at least 12,600 minor victims and at least 20 suicides linked to these schemes (<a href="https://www.fbi.gov/contact-us/field-offices/miami/news/sextortion-a-growing-threat-targeting-minors" target="_blank" rel="noopener">FBI</a>).</p>
+<p>The scheme runs on speed and shame: a short deadline, a flood of messages, and the belief that no adult can be told. Your calm breaks both.</p>
+<h2>Say this first</h2>
+<p>Before any question about how it happened, say one line. Then say it again.</p>
+<div class="callout"><p style="margin:0"><b>Say it:</b> "You're not in trouble. You did the right thing by waking me. We're going to handle this together."</p></div>
+<p>The FBI's own advice to parents starts here: tell them they are not in trouble and they are not alone. The "why" conversation can wait for daylight. Tonight's job is the route out.</p>
+<h2>The first hour, in order</h2>
+<ol>
+<li><b>Stop paying and stop replying.</b> No more money, no more messages, no negotiating. The National Center for Missing &amp; Exploited Children (NCMEC) says paying or going along with demands rarely stops the blackmail (<a href="https://www.missingkids.org/theissues/sextortion" target="_blank" rel="noopener">NCMEC</a>).</li>
+<li><b>Save the evidence.</b> Screenshot the account name, profile, messages, deadlines and any payment requests or receipts. Write down the app and the usernames. Don't delete the conversation or the account.</li>
+<li><b>Don't copy or forward the image itself.</b> Not to yourself, not to police, not to a friend. Tell investigators it exists and let them handle it.</li>
+<li><b>Report and block.</b> Report the account inside the app, then block it. Report to NCMEC's CyberTipline at <a href="https://report.cybertip.org" target="_blank" rel="noopener">report.cybertip.org</a> and to the FBI at <a href="https://tips.fbi.gov" target="_blank" rel="noopener">tips.fbi.gov</a> or 1-800-CALL-FBI.</li>
+<li><b>Start the takedown.</b> If the image was taken when your teen was under 18, NCMEC's free <a href="https://takeitdown.ncmec.org" target="_blank" rel="noopener">Take It Down</a> service creates a digital fingerprint of it so participating platforms can find and remove copies. The image stays on your device and isn't uploaded.</li>
+</ol>
+<blockquote>The deadline is fake. The help is real. You don't have to beat the clock tonight; you just have to stop playing by it.</blockquote>
+<h2>Houston waypoints</h2>
+<ul>
+<li><b>FBI Houston:</b> (713) 693-5000, answered 24/7, or report online at tips.fbi.gov.</li>
+<li><b>Your teen's school counselor and doctor:</b> call Monday. They can help with the days after, at school and at home.</li>
+<li><b>If you're in immediate danger,</b> or someone shows up or threatens violence, call 911.</li>
+</ul>
+<h2>Watch the next few days</h2>
+<p>The shame often hits hardest after the crisis ends. Stay close, keep the phone conversation light, and check in more than usual, even if they say they're fine.</p>
+<div class="callout"><p style="margin:0"><b>If your teen talks about hurting themselves</b> or says they can't live with this, stay with them and call or text <a href="https://988lifeline.org" target="_blank" rel="noopener">988</a>, the Suicide &amp; Crisis Lifeline. If they're in immediate danger, call 911.</p></div>
+<h2>Make the deal before you need it</h2>
+<p>CAPE asks every student to name 3–5 trusted adults and to know where to go when something online goes wrong. You want to be the first name on that list, and kids only knock on doors they know are safe.</p>
+<ul>
+<li>"If anyone ever threatens you online, you won't be in trouble for telling me. Ever."</li>
+<li>"If someone you've never met in person asks for a photo, that's a red flag, even if they seem your age."</li>
+<li>"Scammers set fake deadlines. A deadline is a reason to come get me, not a reason to pay."</li>
+</ul>`,
+      takeaway: "Say \"you're not in trouble\" first, then don't pay, don't delete, and report it tonight.",
+      closing: `<p>The person on the other end of that phone is counting on two things: that your teen panics, and that you explode. When you stay calm, save the evidence and report it, both bets lose. The route out of 1:09 a.m. starts with the sentence your kid needs most: you're not in trouble.</p>`,
+      reflect: "Tonight, before you ever need it, say: “If anyone ever threatens you online, you won't be in trouble for telling me.” Then ask what would make it easier to come to you.",
+      reflectNote: "Want to see how CAPE teaches online safety and finding trusted adults? Request the CAPE parent preview."
+    },
+    {
       slug: "the-location-request",
       title: "The Location Request: when \"share your location\" isn't about safety",
       audience: "youth", date: "2026-11-10", hero: "location",
@@ -927,6 +986,28 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<text x="82" y="248" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#1D6F66" letter-spacing="3">SAFETY ≠ CONTROL</text>' +
         '<image href="' + LANE_ART.CREST_YOUTH + '" x="880" y="40" width="240" height="251"/>' +
         '<text x="1000" y="360" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#1D6F66" letter-spacing="4">BUILT-IN RADAR</text>';
+    },
+    sextortion: function(){
+      var grid = '';
+      for (var x=0;x<=1200;x+=24) grid += '<line x1="'+x+'" y1="0" x2="'+x+'" y2="675" stroke="#2A9D8F" stroke-opacity="'+(x%120===0?.24:.10)+'" stroke-width="1"/>';
+      for (var y=0;y<=675;y+=24) grid += '<line x1="0" y1="'+y+'" x2="1200" y2="'+y+'" stroke="#2A9D8F" stroke-opacity="'+(y%120===0?.24:.10)+'" stroke-width="1"/>';
+      function step(n,y,t){ return '<circle cx="104" cy="'+y+'" r="22" fill="#2A9D8F"/><text x="104" y="'+(y+8)+'" text-anchor="middle" font-family="Space Mono, monospace" font-size="22" font-weight="700" fill="#FFFDF7">'+n+'</text><text x="142" y="'+(y+9)+'" font-family="Space Mono, monospace" font-size="24" font-weight="700" fill="#16324F" letter-spacing="2">'+t+'</text>'; }
+      return '<rect width="1200" height="675" fill="#F6F1E4"/>' + grid +
+        '<text x="80" y="130" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="700" fill="#16324F">You\u2019re not</text>' +
+        '<text x="80" y="196" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="700" fill="#16324F">in trouble.</text>' +
+        '<text x="82" y="240" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#7A5E17" letter-spacing="4">THE FIRST HOUR</text>' +
+        step(1,330,'DON\u2019T PAY') + step(2,400,'SAVE IT') + step(3,470,'REPORT IT') +
+        '<g transform="rotate(-4 600 360)"><rect x="500" y="150" width="230" height="420" rx="34" fill="#16324F"/><rect x="514" y="178" width="202" height="364" rx="18" fill="#FFFDF7"/>' +
+        '<rect x="530" y="214" width="170" height="104" rx="14" fill="#F3D9D9"/>' +
+        '<text x="544" y="246" font-family="DM Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#8E2A2A">pay $500 by 3am</text>' +
+        '<text x="544" y="272" font-family="DM Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#8E2A2A">or everyone</text>' +
+        '<text x="544" y="298" font-family="DM Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#8E2A2A">sees it</text>' +
+        '<path d="M528 210 702 322M702 210 528 322" stroke="#A6387E" stroke-width="7" stroke-linecap="round"/>' +
+        '<rect x="530" y="344" width="170" height="40" rx="14" fill="#F1E7CF"/><rect x="546" y="360" width="110" height="9" rx="4" fill="#9AA6B8"/>' +
+        '<rect x="530" y="398" width="170" height="40" rx="14" fill="#F1E7CF"/><rect x="546" y="414" width="80" height="9" rx="4" fill="#9AA6B8"/>' +
+        '<rect x="546" y="470" width="138" height="44" rx="22" fill="#2A9D8F"/><text x="615" y="499" text-anchor="middle" font-family="Space Mono, monospace" font-size="17" font-weight="700" fill="#FFFDF7" letter-spacing="2">REPORT</text></g>' +
+        '<image href="' + LANE_ART.CREST_PARENT + '" x="860" y="116" width="260" height="234"/>' +
+        '<text x="990" y="430" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#7A5E17" letter-spacing="4">SAT \u00B7 1:09 A.M.</text>';
     },
     phoneplan: function(){
       var grid = '';
