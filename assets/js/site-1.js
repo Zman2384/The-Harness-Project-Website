@@ -38,6 +38,75 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
   };
   var POSTS = [
     {
+      slug: "the-secret-you-cant-keep",
+      title: "The Secret You Can't Keep: when a friend says \"don't tell anyone\"",
+      audience: "youth", date: "2026-11-17", hero: "secret",
+      heroAlt: "A phone on graph paper showing the text \"promise u won't tell anyone\", a 988 call-or-text badge and an open padlock, the words \"Not a secret. A safety plan.\" and \"Safety Kit\", beside the CAPE crest.",
+      excerpt: "A friend texts that they don't want to be here anymore, and makes you promise not to tell. Why this is the one secret you can't keep, and what to do tonight.",
+      hookTime: "TUE · 12:51 A.M.",
+      hook: `
+<p>Your phone buzzes under your pillow. It's your best friend, the one who has been quiet at lunch for two weeks.</p>
+<blockquote>"i can't do this anymore. i don't want to be here. promise you won't tell anyone. promise."</blockquote>
+<p>You type "what do you mean" and delete it. You type "are you ok" and delete that too. The three dots appear, then disappear.</p>
+<p>You want to be the friend who keeps promises. You also have a heavy feeling in your chest that this is not a secret you're supposed to carry alone. And everyone in your house is asleep.</p>`,
+      pivot: "CAPE Decision GPS",
+      body: `
+<h2>Name the Ghosts</h2>
+<p>Ghosts are the fears that make a hard choice feel impossible. Name them and you get your choice back.</p>
+<ul>
+<li><b>Betrayal:</b> "If I tell, I'm breaking a promise." A promise to keep someone safe beats a promise to keep quiet.</li>
+<li><b>They'll Hate Me:</b> "They'll never talk to me again." They might be upset for a while. Upset and safe is a trade worth making.</li>
+<li><b>Making It Worse:</b> "If I ask about suicide, I'll put the idea in their head." Research says asking directly doesn't raise the risk. It opens the door.</li>
+<li><b>It's All on Me:</b> "I have to fix this myself." You don't. Your job is to connect your friend with help, not to be the only help.</li>
+</ul>
+<h2>Secret or safety? One check</h2>
+<p>Most secrets are yours to keep: a crush, a bad grade, an embarrassing story. A few aren't, and the line is simple.</p>
+<div class="callout"><p style="margin:0"><b>The rule:</b> if keeping the secret could let someone get hurt, it stops being a secret. It becomes a safety plan, and safety plans need an adult.</p></div>
+<p>That covers a friend talking about not wanting to live, a friend hurting themselves, or someone hurting them. You can be loyal and still tell.</p>
+<h2>What to do tonight</h2>
+<p>The National Institute of Mental Health lists five steps for helping someone who may be thinking about suicide: ask, be there, help keep them safe, help them connect, and follow up. It also says asking someone directly about suicide does not increase suicidal thoughts or behavior (<a href="https://www.nimh.nih.gov/health/publications/5-action-steps-to-help-someone-having-thoughts-of-suicide" target="_blank" rel="noopener">NIMH</a>). Here's what that looks like from your bed at 12:51.</p>
+<ol>
+<li><b>Ask straight.</b> "Are you thinking about killing yourself?" It's scary to type. It tells them you can handle the real answer.</li>
+<li><b>Listen more than you fix.</b> Don't argue with their feelings or rush to "you have so much to live for." Try "I'm really glad you told me."</li>
+<li><b>Bring in help now.</b> Call or text 988, the Suicide &amp; Crisis Lifeline, together or on your own. You can contact 988 when a friend is struggling, not only for yourself, or chat at chat.988lifeline.org (<a href="https://988lifeline.org/help-someone-else/" target="_blank" rel="noopener">988 Lifeline</a>).</li>
+<li><b>Wake an adult.</b> Your parent, their parent, whoever is closest. You don't have to explain it well. Show them the messages.</li>
+<li><b>Follow up tomorrow.</b> Text in the morning. Sit with them at lunch. Staying in touch after a hard night matters.</li>
+</ol>
+<div class="callout"><p style="margin:0"><b>If they say they have a plan, might act tonight, or stop answering:</b> wake an adult and call 911 right now. Don't wait to be sure.</p></div>
+<h2>Say it in one line</h2>
+<p>You don't need perfect words. You need one line you've already practiced.</p>
+<div class="callout"><p style="margin:0"><b>Say it:</b> "I care about you too much to keep this one. I'm getting us help, and I'm not going anywhere."</p></div>
+<ul>
+<li>"I can't promise that. I can promise I'll stay with you while we call."</li>
+<li>"Are you thinking about killing yourself? You can tell me the truth."</li>
+<li>"Will you text 988 with me right now?"</li>
+</ul>
+<blockquote>Telling isn't snitching. It's how you keep your friend around to be mad at you.</blockquote>
+<h2>You're not the only one noticing</h2>
+<p>Heavy feelings are more common than most students think. In CDC's 2025 national survey, about 1 in 3 high school students reported persistent sadness or hopelessness, and 14% said they had seriously considered suicide in the past year, down from 20% in 2023 (<a href="https://www.cdc.gov/yrbs/youth-health-in-focus/mental-health.html" target="_blank" rel="noopener">CDC</a>). When you tell, you connect your friend to people trained for exactly this.</p>
+<h2>Check your MATCH Compass</h2>
+<ul>
+<li><b>Health Armor:</b> mental health is health. A friend in crisis is a health emergency, not drama.</li>
+<li><b>Built-In Radar:</b> talking about wanting to die or being a burden, pulling away from friends, saying goodbye, or giving away important things are warning signs (<a href="https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide" target="_blank" rel="noopener">NIMH</a>).</li>
+<li><b>Safety Kit:</b> 3–5 trusted adults, plus 988 saved in your phone.</li>
+<li><b>Strongest Voice:</b> "I can't keep this one." Say it once, then act.</li>
+<li><b>Daily Superpower:</b> check in on the quiet friend, even on ordinary days.</li>
+</ul>
+<h2>Houston waypoints</h2>
+<ul>
+<li><b>988 Suicide &amp; Crisis Lifeline:</b> call or text 988, or chat at <a href="https://chat.988lifeline.org" target="_blank" rel="noopener">chat.988lifeline.org</a>.</li>
+<li><b>The Harris Center Crisis Line:</b> 713-970-7000 (toll-free 1-866-970-7000), open 24/7 for mental health support in Harris County (<a href="https://theharriscenter.org/contact" target="_blank" rel="noopener">The Harris Center</a>).</li>
+<li><b>Your school counselor:</b> first thing tomorrow. Adults at school may need to bring in others to keep your friend safe. That's the system working, not punishing anyone.</li>
+<li><b>Immediate danger:</b> call 911.</li>
+</ul>
+<h2>Take care of you, too</h2>
+<p>A night like this is heavy to carry. Tell your own trusted adult how you're doing, and remember that 988 is there for you, too, not just for your friend.</p>`,
+      takeaway: "If keeping a secret could let someone get hurt, it isn't a secret anymore. Tell an adult tonight.",
+      closing: `<p>The 12:51 text asks you to choose between being loyal and keeping your friend safe. You don't have to choose. Asking straight, calling 988 and waking an adult is the loyal move. You're the navigator. Your CAPE is the compass.</p>`,
+      reflect: "Who is the trusted adult you would wake up at 1 a.m. for a friend? Save 988 and that adult's number in your phone tonight.",
+      reflectNote: "Families: tell your teen tonight that they will never be in trouble for waking you up about a friend, then save 988 in your phones together. This mirrors the CAPE Safety Kit: 3–5 trusted adults every student can name."
+    },
+    {
       slug: "three-site-testing",
       title: "Negative, but only in one place: the case for three-site testing",
       audience: "adult", date: "2026-11-16", hero: "threesite",
@@ -1036,6 +1105,29 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<text x="82" y="248" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#1D6F66" letter-spacing="3">BYSTANDER → UPSTANDER</text>' +
         '<image href="' + LANE_ART.CREST_YOUTH + '" x="880" y="40" width="240" height="251"/>' +
         '<text x="1000" y="360" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#1D6F66" letter-spacing="4">THE BOUNDARY SHIELD</text>';
+    },
+    secret: function(){
+      var grid = '';
+      for (var x=0;x<=1200;x+=24) grid += '<line x1="'+x+'" y1="0" x2="'+x+'" y2="675" stroke="#2A9D8F" stroke-opacity="'+(x%120===0?.26:.11)+'" stroke-width="1"/>';
+      for (var y=0;y<=675;y+=24) grid += '<line x1="0" y1="'+y+'" x2="1200" y2="'+y+'" stroke="#2A9D8F" stroke-opacity="'+(y%120===0?.26:.11)+'" stroke-width="1"/>';
+      return '<rect width="1200" height="675" fill="#F6F1E4"/>' + grid +
+        '<rect x="420" y="70" width="270" height="520" rx="38" fill="#16324F"/><rect x="436" y="100" width="238" height="460" rx="22" fill="#FFFDF7"/>' +
+        '<text x="555" y="150" text-anchor="middle" font-family="Space Mono, monospace" font-size="34" font-weight="700" fill="#16324F">12:51</text>' +
+        '<rect x="456" y="178" width="198" height="56" rx="16" fill="#F1E7CF"/><text x="472" y="213" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#16324F">i can’t do this</text>' +
+        '<rect x="456" y="242" width="198" height="84" rx="16" fill="#F1E7CF"/>' +
+        '<text x="472" y="276" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#16324F">promise u won’t</text>' +
+        '<text x="472" y="304" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#16324F">tell anyone</text>' +
+        '<rect x="456" y="404" width="198" height="120" rx="16" fill="#E9F4F2" stroke="#2A9D8F" stroke-width="2"/>' +
+        '<text x="555" y="438" text-anchor="middle" font-family="Space Mono, monospace" font-size="15" font-weight="700" fill="#1D6F66">CALL OR TEXT</text>' +
+        '<text x="555" y="500" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="64" fill="#A6387E">988</text>' +
+        '<g transform="translate(190 470)"><circle r="120" fill="none" stroke="#2A9D8F" stroke-width="2" stroke-dasharray="6 10"/><circle r="70" fill="none" stroke="#C29B38" stroke-width="2"/>' +
+        '<path d="M-26 -14v-30a26 26 0 0 1 50 -10" fill="none" stroke="#16324F" stroke-width="10" stroke-linecap="round"/>' +
+        '<rect x="-44" y="-16" width="88" height="70" rx="12" fill="#A6387E"/><circle cx="0" cy="12" r="10" fill="#fff"/><rect x="-4" y="14" width="8" height="22" rx="3" fill="#fff"/></g>' +
+        '<text x="80" y="140" font-family="Playfair Display, Georgia, serif" font-size="46" font-weight="700" fill="#16324F">Not a secret.</text>' +
+        '<text x="80" y="204" font-family="Playfair Display, Georgia, serif" font-size="46" font-weight="700" fill="#16324F">A safety plan.</text>' +
+        '<text x="82" y="248" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#1D6F66" letter-spacing="3">ASK · CALL · TELL</text>' +
+        '<image href="' + LANE_ART.CREST_YOUTH + '" x="880" y="40" width="240" height="251"/>' +
+        '<text x="1000" y="360" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#1D6F66" letter-spacing="4">SAFETY KIT</text>';
     },
     location: function(){
       var grid = '';
