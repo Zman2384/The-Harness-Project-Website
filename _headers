@@ -27,3 +27,6 @@
 /educators-hub/vault/*
   X-Robots-Tag: noindex, nofollow
   Cache-Control: no-cache
+
+/docs/*
+  X-Robots-Tag: noindex, nofollow

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /educators-hub/
+Disallow: /docs/
 Sitemap: https://theharnessproject.org/sitemap.xml
