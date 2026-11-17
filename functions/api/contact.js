@@ -1,6 +1,6 @@
 /**
  * Website forms — server-side submit.
- * Cloudflare Pages Function served at https://theharnessproject.org/api/contact
+ * Cloudflare Pages Function served at https://www.theharnessproject.org/api/contact
  *
  * Used by the Contact form (/contact), the Pricing request form (/pricing) and the
  * 90-day pilot request form (/partners). Each submission is emailed to the inbox

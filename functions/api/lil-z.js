@@ -1,6 +1,6 @@
 /**
  * Lil Z — live guide for the MATCH Flow app.
- * Cloudflare Pages Function served at https://theharnessproject.org/api/lil-z
+ * Cloudflare Pages Function served at https://www.theharnessproject.org/api/lil-z
  *
  * Setup (once): Cloudflare dashboard → Workers & Pages → this site → Settings →
  * Variables and Secrets → add a Secret named ANTHROPIC_API_KEY. Optional plain

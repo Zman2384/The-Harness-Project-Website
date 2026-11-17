@@ -1377,7 +1377,7 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
       e.preventDefault();
       var name = form.querySelector('#cm-name').value.trim(), text = form.querySelector('#cm-text').value.trim();
       if (!name || !text){ status.textContent = 'Add a name or handle and a comment to submit.'; status.className = 'form-status err'; return; }
-      var body = 'Post: ' + p.title + '\nLink: https://theharnessproject.org/blog/' + p.slug + '\nName or handle: ' + name +
+      var body = 'Post: ' + p.title + '\nLink: https://www.theharnessproject.org/blog/' + p.slug + '\nName or handle: ' + name +
         '\nAgreed to all 6 Brave Space ground rules: yes\n\nComment:\n' + text;
       window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Comment for review: ' + p.title) + '&body=' + encodeURIComponent(body);
       status.textContent = 'Comment ready. Send it from your email app to submit it for review.'; status.className = 'form-status';

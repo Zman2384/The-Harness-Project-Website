@@ -20,7 +20,7 @@
       var blob=new Blob([title+'\r\n\r\n'+body.replace(/\n/g,'\r\n')+'\r\n'],{type:'text/plain;charset=utf-8'});
       var u=URL.createObjectURL(blob);var l=document.createElement('a');l.href=u;l.download=d.getAttribute('data-file')||'handout.txt';document.body.appendChild(l);l.click();document.body.removeChild(l);setTimeout(function(){URL.revokeObjectURL(u);},1500);return;}
     var c=tg.closest('.pv-copy');
-    if(c){var base=/^https?:/.test(location.href)?location.href.split('#')[0]:'https://theharnessproject.org/';var url=base+c.getAttribute('data-hash');var st=c.parentNode.querySelector('.pv-status');
+    if(c){var base=/^https?:/.test(location.href)?location.href.split('#')[0]:'https://www.theharnessproject.org/';var url=base+c.getAttribute('data-hash');var st=c.parentNode.querySelector('.pv-status');
       function ok(){if(st)st.textContent='Link copied.';}function fail(){if(st)st.textContent=url;}
       if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(ok,fail);}else{fail();}
       return;}

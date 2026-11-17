@@ -4,9 +4,9 @@
     "title": "The HARNESS Project public site",
     "version": "1.0.0",
     "description": "Read-only public endpoints for theharnessproject.org. No accounts, no sign-ups, no personal data. For educational purposes only. Not medical advice.",
-    "contact": { "email": "email@theharnessproject.org", "url": "https://theharnessproject.org/contact" }
+    "contact": { "email": "email@theharnessproject.org", "url": "https://www.theharnessproject.org/contact" }
   },
-  "servers": [{ "url": "https://theharnessproject.org" }],
+  "servers": [{ "url": "https://www.theharnessproject.org" }],
   "paths": {
     "/api/status.json": {
       "get": {
