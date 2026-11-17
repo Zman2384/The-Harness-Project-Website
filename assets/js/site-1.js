@@ -38,6 +38,68 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
   };
   var POSTS = [
     {
+      slug: "three-site-testing",
+      title: "Negative, but only in one place: the case for three-site testing",
+      audience: "adult", date: "2026-11-16", hero: "threesite",
+      heroAlt: "Three test tubes labeled throat, rectal and urine over a starfield and grid floor, with only the urine tube checked, the words \"Negative where?\" and the Adults blog crest.",
+      question: "The last time you got tested, did you know which sites were checked? What would make it easier to ask for all three?", comments: [],
+      excerpt: "A partner texts at 1 a.m.: they tested positive. Your negative test may have checked only one of three sites. What to ask for this week.",
+      hookTime: "SUN · 1:06 A.M.",
+      hook: `
+<p>Your phone lights up on the nightstand. It's the guy from three weekends ago.</p>
+<blockquote>"Hey, not a fun text to send. My clinic just called. I tested positive for gonorrhea. You should get checked."</blockquote>
+<p>Your first reaction is relief. You got tested two weeks ago. Negative. You even screenshotted the result.</p>
+<p>Then you replay the visit: you peed in a cup, they drew blood, you were out in twenty minutes. Nobody swabbed your throat. Nobody swabbed anywhere else. And that night with him wasn't only the kind of sex a urine cup can see.</p>`,
+      pivot: "MATCH Framework",
+      body: `
+<p>A negative result is only as good as the places it checked. Before you panic or shrug it off, find out which piece of your plan actually broke, and which pieces still hold.</p>
+<h2>Name the Ghosts</h2>
+<ul>
+<li><b>False Comfort:</b> "My test was clean, so it can't be me." A urine test checks where urine passes. It says nothing about your throat or rectum.</li>
+<li><b>Disclosure:</b> "I don't want to tell a provider what kind of sex I had." Saying it is what gets you the right swabs. Clinics hear it every day.</li>
+<li><b>Timing:</b> "I'll wait until something feels wrong." Throat and rectal infections often never feel like anything.</li>
+</ul>
+<h2>Why one negative can miss two sites</h2>
+<p>Gonorrhea and chlamydia infect the place they touched. A urine test checks the urethra, a throat swab checks the throat, and a rectal swab checks the rectum. One sample can't stand in for the other two.</p>
+<p>The gap is big. CDC's treatment guidelines estimate that testing only the genitals misses about 70% of gonorrhea and chlamydia infections in men who have sex with men. Rectal and throat infections are often silent, so feeling fine doesn't settle it (<a href="https://www.cdc.gov/std/treatment-guidelines/msm.htm" target="_blank" rel="noopener">CDC</a>).</p>
+<h2>What three-site testing means</h2>
+<p>You get tested at every place you had sex, not just the easy one:</p>
+<ul>
+<li><b>Urine</b> if you had insertive sex: gonorrhea and chlamydia.</li>
+<li><b>Rectal swab</b> if you had receptive anal sex: gonorrhea and chlamydia.</li>
+<li><b>Throat swab</b> if you gave oral sex: gonorrhea.</li>
+</ul>
+<p>CDC guidance calls for testing men who have sex with men at each exposed site at least once a year, whether or not condoms were used. It moves that to every 3 to 6 months for people on PrEP, people living with HIV, and anyone with multiple partners (<a href="https://www.cdc.gov/std/treatment-guidelines/msm.htm" target="_blank" rel="noopener">CDC</a>). For women, CDC says rectal testing can be considered based on the sex you report, decided with your provider (<a href="https://www.cdc.gov/std/treatment-guidelines/chlamydia.htm" target="_blank" rel="noopener">CDC</a>).</p>
+<h2>After a partner's positive: the fix</h2>
+<p>A partner's diagnosis changes the math. You don't have to wait for your own positive result to act.</p>
+<ol>
+<li><b>Get seen this week.</b> Tell the clinic a partner tested positive and when you had sex. CDC says partners from the 60 days before a diagnosis should be evaluated, tested and treated presumptively, so treatment can start at the same visit, before results come back (<a href="https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm" target="_blank" rel="noopener">CDC</a>).</li>
+<li><b>Name every site you used.</b> Throat, rectum, urine. Don't make the provider guess.</li>
+<li><b>Expect a shot.</b> CDC's recommended gonorrhea treatment is one 500 mg injection of ceftriaxone, with doxycycline added if chlamydia hasn't been ruled out (<a href="https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm" target="_blank" rel="noopener">CDC</a>).</li>
+<li><b>Pause sex for a week.</b> CDC advises no sex for 7 days after treatment and until your partners are treated (<a href="https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm" target="_blank" rel="noopener">CDC</a>).</li>
+<li><b>If it was your throat, come back.</b> Throat gonorrhea is harder to clear, so CDC recommends a test of cure 7 to 14 days after treatment, and a retest at 3 months for anyone treated (<a href="https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm" target="_blank" rel="noopener">CDC</a>).</li>
+<li><b>Round out the panel.</b> Ask for HIV and syphilis testing at the same visit.</li>
+</ol>
+<div class="callout"><p style="margin:0"><b>Say it plainly:</b> "A partner just tested positive for gonorrhea. I had oral and anal sex. I need throat, rectal and urine testing, and I'd like to be treated today."</p></div>
+<h2>Where to ask in Houston</h2>
+<ul>
+<li><b>Houston Health Department health centers:</b> STI and HIV testing, with sliding-scale fees.</li>
+<li><b>Legacy Community Health:</b> HIV and STI testing and treatment across Greater Houston.</li>
+<li><b>Anywhere else:</b> search your ZIP code at <a href="https://gettested.cdc.gov" target="_blank" rel="noopener">gettested.cdc.gov</a>, then call ahead and ask, "Do you do throat and rectal swabs?"</li>
+</ul>
+<h2>Map it to MATCH</h2>
+<ul>
+<li><b>Medications:</b> PrEP protects against HIV, not gonorrhea or chlamydia. If you're on it, your PrEP visits are the natural time for three-site testing. If bacterial STIs keep coming back, ask about <a href="/blog/doxy-pep-backup">doxy-PEP</a>.</li>
+<li><b>Awareness:</b> know which sites were tested last time. If your results only list urine, that's one of three.</li>
+<li><b>Tools:</b> condoms still lower the odds. Keep them stocked, and keep the testing schedule anyway.</li>
+<li><b>Communication:</b> tell your provider what sex you had. Accurate words get you accurate swabs. If you test positive, tell your partners, the way he told you.</li>
+<li><b>Habits:</b> put your next test date in your phone the day you leave the clinic.</li>
+</ul>
+<p><i>This is education, not medical advice. Testing and treatment decisions belong with your provider.</i></p>`,
+      takeaway: "A negative test only covers the places it checked. Ask for every site you used.",
+      closing: `<p>He sent a hard text at 1 a.m. so you'd have a chance to act. A urine cup can't clear your throat or your rectum, and neither can feeling fine. Name the sites, get the swabs, take the treatment, and pass the same honesty forward if your result comes back positive.</p>`
+    },
+    {
       slug: "teen-sextortion-first-hour",
       title: "The first hour: when your teen is being sextorted",
       audience: "parent", date: "2026-11-15", hero: "sextortion",
@@ -825,6 +887,20 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
     return g;
   }
   var HEROES = {
+    threesite: function(){
+      var tubes = [["THROAT",false],["RECTAL",false],["URINE",true]], g = '';
+      tubes.forEach(function(t,i){ var x = 130 + i*170;
+        g += '<rect x="'+x+'" y="150" width="90" height="300" rx="45" fill="#0A0F1C" stroke="'+(t[1]?'#3ED6E8':'#FF2E88')+'" stroke-width="5"/>' +
+             '<rect x="'+(x-8)+'" y="130" width="106" height="36" rx="8" fill="'+(t[1]?'#3ED6E8':'#FF2E88')+'"/>' +
+             '<text x="'+(x+45)+'" y="500" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#A9B3C7" letter-spacing="2">'+t[0]+'</text>' +
+             (t[1] ? '<path d="M'+(x+20)+' 300 l20 22 l32 -44" fill="none" stroke="#90B14B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>'
+                   : '<text x="'+(x+45)+'" y="322" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="80" fill="#FFC93C">?</text>'); });
+      return '<rect width="1200" height="675" fill="#05070D"/>' + starsSVG(1200,675,130,83) + floorSVG("#15223A") + g +
+        '<text x="680" y="190" font-family="Bebas Neue, Impact, sans-serif" font-size="104" fill="#EDEFF4">NEGATIVE</text>' +
+        '<text x="680" y="290" font-family="Bebas Neue, Impact, sans-serif" font-size="104" fill="#FFC93C">WHERE?</text>' +
+        '<text x="684" y="340" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#A9B3C7" letter-spacing="4">TEST EVERY SITE YOU USED</text>' +
+        '<image href="' + LANE_ART.CREST_ADULT + '" x="800" y="462" width="350" height="171"/>';
+    },
     midnight: function(){
       var grid = '';
       for (var x=0;x<=1200;x+=24) grid += '<line x1="'+x+'" y1="0" x2="'+x+'" y2="675" stroke="#2A9D8F" stroke-opacity="'+(x%120===0?.28:.12)+'" stroke-width="1"/>';
