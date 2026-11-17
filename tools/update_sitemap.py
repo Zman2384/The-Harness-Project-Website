@@ -6,7 +6,7 @@ Run from the repo root with full git history: python3 tools/update_sitemap.py
 (add --recompute to reset every date to its real content date)."""
 import re, subprocess, pathlib, hashlib
 
-SITE = "https://theharnessproject.org"
+SITE = "https://www.theharnessproject.org"
 
 def git(*a):
     return subprocess.run(["git", *a], capture_output=True, text=True).stdout
