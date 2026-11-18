@@ -38,6 +38,59 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
   };
   var POSTS = [
     {
+      slug: "the-1am-plan",
+      title: "The 1 a.m. Plan: Protection That Still Works After Midnight",
+      audience: "adult", date: "2026-11-18", hero: "oneamplan",
+      heroAlt: "Five puzzle tiles spelling MATCH over a starfield and grid floor, with the T tile dashed and marked with a question mark under a 1:14 A.M. clock, the words \"The 1 a.m. Plan\" and \"Build it in daylight\", and the Adults blog crest.",
+      question: "If your plan had to run at 1:14 a.m. tonight, which MATCH piece would go missing first, and what's one thing you can do today to lock it in?", comments: [],
+      excerpt: "It's 1 a.m. and \"I'll be careful\" isn't a plan. Build a five-piece MATCH plan in daylight so it holds after midnight, plus one line to say.",
+      hookTime: "SAT · 1:14 A.M.",
+      hook: `
+<p>You met them three weeks ago. Tonight it's finally happening: their place, low light, the chemistry you've been texting about all week.</p>
+<p>Then your brain runs the math it skipped all evening. The condoms are in your car, two floors down. You took your PrEP Thursday. Maybe Wednesday. You honestly can't remember.</p>
+<p>You have no idea when they were last tested. You're not sure about your own last test either.</p>
+<p>Asking now feels like pulling the fire alarm at a party. Not asking feels like a bet you never agreed to make. The clinic opens Monday, and a voice in your head is getting louder: <i>"It's probably fine."</i></p>`,
+      pivot: "MATCH Framework",
+      body: `
+<p>That voice isn't a plan, but the MATCH Framework is: five puzzle pieces, so when one goes missing at 1 a.m., you can see exactly which piece broke and which pieces still hold.</p>
+<h2>Name the ghost: the Vibe-Killer</h2>
+<p>"It's probably fine" is the Vibe-Killer ghost talking. It isn't scared of HIV or an STI. It's scared of ruining the moment, of being the one who made it awkward.</p>
+<p>Right behind it is the Timing ghost: <i>this is the wrong moment to ask.</i> Together they turn a 20-second question into something that feels impossible.</p>
+<p>Here's the thing: willpower at 1 a.m. is the weakest tool you own. You're tired, maybe a little buzzed, and very into someone. That's when your brain takes shortcuts. The fix isn't trying harder after midnight. It's leaving fewer decisions for midnight.</p>
+<h2>Why "I'll be careful" fails</h2>
+<p>"I'll be careful" is an intention, not a plan. It has to be built on the spot, by the most distracted version of you, in the worst possible conditions.</p>
+<p>A 1 a.m. plan is built in daylight. At 1 a.m., your only job is to follow it.</p>
+<h2>Build your 1 a.m. plan, one piece at a time</h2>
+<p>Each MATCH piece gets one move you make <i>before</i> the night starts.</p>
+<ul>
+<li><b>M · Medications:</b> Know your PrEP status cold. If daily pills are hard to keep up with, ask your provider about the injectable options: one shot every two months, or one twice a year (<a href="https://www.hiv.gov/hiv-basics/hiv-prevention/using-hiv-medication-to-reduce-risk/pre-exposure-prophylaxis" target="_blank" rel="noopener">HIV.gov</a>). And know your emergency brake: PEP has to start within 72 hours of a possible exposure and is taken for 28 days (<a href="https://www.cdc.gov/hiv/prevention/pep.html" target="_blank" rel="noopener">CDC</a>).</li>
+<li><b>A · Awareness:</b> Know your last test date and book your next one. If you're a man who has sex with men and you're on PrEP or have multiple partners, CDC recommends STI testing every 3 to 6 months, at every site you use: throat, rectum and urine (<a href="https://www.cdc.gov/std/treatment-guidelines/screening-recommendations.htm" target="_blank" rel="noopener">CDC</a>). Not in that group? Ask your provider which schedule fits you.</li>
+<li><b>T · Tools:</b> Condoms on you, not in the car. Pair them with water-based or silicone-based lube. Oil-based lube can weaken a condom and cause it to break (<a href="https://www.cdc.gov/hiv/prevention/condoms.html" target="_blank" rel="noopener">CDC</a>).</li>
+<li><b>C · Communication:</b> Pick your line now, while nobody's watching. (It's below.)</li>
+<li><b>H · Habits:</b> Put three things in your phone today: a daily PrEP reminder, your next test date, and the address of the nearest emergency room.</li>
+</ul>
+<h2>Stress-test it: which piece broke?</h2>
+<p>Go back to 1:14 a.m. and run the plan instead of the panic.</p>
+<ul>
+<li><b>Tools broke.</b> The condoms are in the car. That's a two-minute walk, not a lost night. Go get them.</li>
+<li><b>Medications are uncertain.</b> Don't guess on missed PrEP doses. Tonight, condoms carry more of the load. Monday, call your provider about getting back on track. (Money behind the missed doses? Read <a href="/blog/the-cost-ghost">the Cost ghost</a>.)</li>
+<li><b>Awareness is missing.</b> You don't know their status, or your own last test. That's exactly what the script is for.</li>
+<li><b>If something goes wrong anyway</b> (the condom breaks, or you skip it), the clock starts. Go to an emergency room and ask for PEP. Don't wait for Monday. (<a href="/blog/pep-72-hour-window">What to know about PEP</a>.)</li>
+</ul>
+<p>Notice what still holds: Communication and Habits. A missing piece isn't a failed plan. It tells you which piece to lean on.</p>
+<h2>The script</h2>
+<div class="callout"><p style="margin:0"><b>"I'm really into this. Quick pause: I'm grabbing condoms, and I'd love to know when you were last tested. I'll go first."</b></p></div>
+<p>"I'll go first" does the heavy lifting. It turns a question that can feel like an accusation into an exchange. If a 20-second pause kills the mood, the mood was never protecting you.</p>
+<h2>Houston waypoints</h2>
+<ul>
+<li><b>Emergency PEP:</b> any emergency room. Ben Taub Hospital, Harris Health's Level I trauma center, is one.</li>
+<li><b>Testing and PrEP:</b> Legacy Community Health offers no-cost HIV testing at participating locations, and some sites take walk-ins. Avenue 360 and the Montrose Center are also on the map.</li>
+</ul>
+<p><i>This is education, not medical advice. PrEP, PEP and testing decisions belong with your provider.</i></p>`,
+      takeaway: "Build the plan in daylight, so all you have to do at 1 a.m. is follow it.",
+      closing: `<p>Plans don't fail at the doctor's office. They fail after midnight, when you're tired, distracted and into someone. Name the Vibe-Killer, set each MATCH piece in daylight, and when one goes missing, check which pieces still hold.</p>`
+    },
+    {
       slug: "the-thanksgiving-table-question",
       title: "The Thanksgiving Table Question: how to back your teen at family dinner",
       audience: "parent", date: "2026-11-18", hero: "thanksgiving",
@@ -1011,6 +1064,19 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
     return g;
   }
   var HEROES = {
+    oneamplan: function(){
+      var tiles = [["M",true],["A",true],["T",false],["C",true],["H",true]], g = '';
+      tiles.forEach(function(t,i){ var x = 100 + i*96;
+        g += '<rect x="'+x+'" y="250" width="84" height="120" rx="12" fill="#0A0F1C" stroke="'+(t[1]?'#3ED6E8':'#FF2E88')+'" stroke-width="5"'+(t[1]?'':' stroke-dasharray="14 10"')+'/>' +
+             '<text x="'+(x+42)+'" y="342" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="84" fill="'+(t[1]?'#EDEFF4':'#FFC93C')+'">'+(t[1]?t[0]:'?')+'</text>'; });
+      return '<rect width="1200" height="675" fill="#05070D"/>' + starsSVG(1200,675,130,114) + floorSVG("#15223A") +
+        '<text x="100" y="205" font-family="Space Mono, monospace" font-size="40" font-weight="700" fill="#FF2E88" letter-spacing="4">1:14 A.M.</text>' + g +
+        '<text x="104" y="420" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#A9B3C7" letter-spacing="4">WHICH PIECE BROKE?</text>' +
+        '<text x="680" y="190" font-family="Bebas Neue, Impact, sans-serif" font-size="104" fill="#EDEFF4">THE 1 A.M.</text>' +
+        '<text x="680" y="290" font-family="Bebas Neue, Impact, sans-serif" font-size="104" fill="#FFC93C">PLAN</text>' +
+        '<text x="684" y="340" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#A9B3C7" letter-spacing="4">BUILD IT IN DAYLIGHT</text>' +
+        '<image href="' + LANE_ART.CREST_ADULT + '" x="800" y="462" width="350" height="171"/>';
+    },
     threesite: function(){
       var tubes = [["THROAT",false],["RECTAL",false],["URINE",true]], g = '';
       tubes.forEach(function(t,i){ var x = 130 + i*170;
