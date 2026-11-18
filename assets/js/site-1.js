@@ -91,6 +91,61 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
       closing: `<p>Plans don't fail at the doctor's office. They fail after midnight, when you're tired, distracted and into someone. Name the Vibe-Killer, set each MATCH piece in daylight, and when one goes missing, check which pieces still hold.</p>`
     },
     {
+      slug: "the-thanksgiving-table-question",
+      title: "The Thanksgiving Table Question: how to back your teen at family dinner",
+      audience: "parent", date: "2026-11-18", hero: "thanksgiving",
+      heroAlt: "A holiday table on cream notebook paper with plates and a pie, a phone showing a one-word text, \"kitchen\", the words \"One line each. One exit signal.\" and the Parents and Caregivers house crest.",
+      excerpt: "When a relative puts your teen on the spot in front of everyone, you have about four seconds. Here's how to use them.",
+      hookTime: "THU · 4:12 P.M.",
+      hook: `
+<p>The plates are full. The game is on in the next room. Then your uncle leans back, grins at your teen, and says it loud enough for the whole table.</p>
+<blockquote>"So, are you dating anybody yet? Or are you still too shy?"</blockquote>
+<p>A couple of people laugh. An aunt adds, "Look at that face. That's a yes." Your teen goes red, stares at the plate, then looks right at you.</p>
+<p>The room is waiting. Say something and you're "making a thing of it" on a holiday. Say nothing and your teen learns that this table isn't a place where you have their back.</p>`,
+      pivot: "CAPE Decision GPS",
+      body: `
+<p>The Decision GPS gives you a route through this moment, and the best time to plan it is in the car, before anyone passes the rolls.</p>
+<h2>Name your Ghosts</h2>
+<p>Parents have ghosts too. These are the ones that pull up a chair at holiday tables.</p>
+<ul>
+<li><b>Scene:</b> "If I say something, I'll ruin dinner." A calm redirect takes five seconds. Nobody's dinner ends over it.</li>
+<li><b>Respect:</b> "You don't correct your elders." You're not correcting anyone. You're changing the subject kindly, and that's a family skill too.</li>
+<li><b>Just a Joke:</b> "They don't mean anything by it." Maybe not. Your teen still has to sit there while the table laughs.</li>
+<li><b>Let Them Handle It:</b> "They're old enough to speak up." They might be. Knowing you'll back them up is what makes speaking up feel possible.</li>
+</ul>
+<h2>What your teen already practices in CAPE</h2>
+<p>CAPE (grades 6–12) teaches four kinds of scripts: setting a boundary, asking for clarity, holding the line, and buying time. One of the Lesson 2 role-play cards is called "The family version." Same boundary, but the person asking is a relative at a family event. The note on the card says it best: same script, warmer tone. It still works.</p>
+<p>Teens also build a private Boundary Menu, from Appetizers (an easy yes) to Do Not Serve (a firm no). And they learn to treat how someone reacts to a no as information about that person, not a verdict on the boundary.</p>
+<p>So your teen may already have the words. What they need at the table is to know you'll stand behind them.</p>
+<h2>Run the Decision GPS on the drive over</h2>
+<p>In CAPE, the MATCH Compass works as a Decision GPS: five quick checks in about four seconds, "which is roughly how long you get." Run it together before you walk in.</p>
+<ul>
+<li><b>M · Health Armor:</b> Have we planned ahead? Ten minutes in the car beats ten seconds of panic at the table.</li>
+<li><b>A · Built-In Radar:</b> Who tends to go there, and with what? Dating, weight, grades, "When I was your age." Name them out loud so nobody gets surprised.</li>
+<li><b>T · Safety Kit:</b> Agree on an exit signal. A code word, or a text that just says "kitchen," means "get me out of this." Your answer is "Can you help me with the pie?" No questions in front of anyone.</li>
+<li><b>C · Strongest Voice:</b> Pick one line each, so neither of you has to improvise. Settle hugs too: a wave or a high five is a fine hello.</li>
+<li><b>H · Daily Superpower:</b> Choose the pace together. Agree on when you're leaving, and that stepping outside for a break is allowed. Hour five, tired and hungry, is when tempers run short.</li>
+</ul>
+<h2>The lines to bring</h2>
+<div class="callout"><p style="margin:0"><b>Your teen's line:</b> "I'm good, thanks. Ask me about the robotics team instead."</p></div>
+<div class="callout"><p style="margin:0"><b>Your line:</b> "We're keeping it to school and football today. Tell Uncle Ray about the robotics team."</p></div>
+<p>Short, friendly, and done. You're not scolding anyone. You're steering.</p>
+<blockquote>Same boundary, warmer tone. It still works.</blockquote>
+<h2>If they ask again</h2>
+<p>Some relatives try a second time. CAPE's line for the repeat ask works just as well from a parent: "They already answered." Then move the conversation along, pass a dish, or head for the kitchen.</p>
+<p>If the relative sulks or calls you "too sensitive," let it go. That reaction tells you about them. It isn't a sign you got it wrong.</p>
+<h2>The ride home</h2>
+<p>This is the step most families skip. On the drive home, ask: "How was that for you? Did I get it right?"</p>
+<p>If your teen used the signal, thank them. "Thanks for telling me" is the sentence that keeps the door open for the next hard moment, including the ones that come at 1 a.m.</p>
+<h2>When it's more than a joke</h2>
+<p>Sometimes a comment isn't just awkward. A relative who keeps remarking on your teen's body, looks for time alone with them, or asks them to keep secrets is a red flag. Trust your radar.</p>
+<div class="callout"><p style="margin:0"><b>Stay calm and believe your teen.</b> Get support from the school counselor or your child's doctor. If a child is in danger, call 911. In Texas, report suspected abuse to the Texas Abuse Hotline at 1-800-252-5400 or <a href="https://www.txabusehotline.org">txabusehotline.org</a> (<a href="https://www.dfps.texas.gov/Contact_Us/" target="_blank" rel="noopener">Texas DFPS</a>).</p></div>`,
+      takeaway: "Plan the table in the car: one line each, one exit signal, and a teen who knows you have their back.",
+      closing: `<p>You can't control what gets said at the table. You can make sure your teen walks in with a plan and walks out knowing you were on their side. That's the part they'll remember, long after the leftovers are gone.</p>`,
+      reflect: "On the drive over, ask your teen: “Which question are you hoping nobody asks?” Then pick your exit signal together.",
+      reflectNote: "Want to see how CAPE teaches the Boundary Menu and the Decision GPS? Request the CAPE parent preview."
+    },
+    {
       slug: "the-secret-you-cant-keep",
       title: "The Secret You Can't Keep: when a friend says \"don't tell anyone\"",
       audience: "youth", date: "2026-11-17", hero: "secret",
@@ -1261,6 +1316,27 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
         '<text x="82" y="172" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#7A5E17" letter-spacing="4">MADE TOGETHER</text>' +
         '<image href="' + LANE_ART.CREST_PARENT + '" x="870" y="116" width="260" height="234"/>' +
         '<text x="1000" y="430" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#7A5E17" letter-spacing="4">AFTER 10:30 P.M.</text>';
+    },
+    thanksgiving: function(){
+      var grid = '';
+      for (var x=0;x<=1200;x+=24) grid += '<line x1="'+x+'" y1="0" x2="'+x+'" y2="675" stroke="#2A9D8F" stroke-opacity="'+(x%120===0?.24:.10)+'" stroke-width="1"/>';
+      for (var y=0;y<=675;y+=24) grid += '<line x1="0" y1="'+y+'" x2="1200" y2="'+y+'" stroke="#2A9D8F" stroke-opacity="'+(y%120===0?.24:.10)+'" stroke-width="1"/>';
+      function plate(cx){ return '<circle cx="'+cx+'" cy="540" r="62" fill="#FFFDF7" stroke="#C9B98F" stroke-width="4"/><circle cx="'+cx+'" cy="540" r="42" fill="none" stroke="#E9DCC0" stroke-width="3"/>'; }
+      return '<rect width="1200" height="675" fill="#F6F1E4"/>' + grid +
+        '<text x="80" y="130" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="700" fill="#16324F">The Thanksgiving</text>' +
+        '<text x="80" y="196" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="700" fill="#16324F">Table Question</text>' +
+        '<text x="82" y="240" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#7A5E17" letter-spacing="4">ONE LINE EACH. ONE EXIT SIGNAL.</text>' +
+        '<rect x="50" y="450" width="760" height="190" rx="18" fill="#E9DCC0" stroke="#16324F" stroke-width="5"/>' +
+        plate(160) + plate(330) +
+        '<circle cx="500" cy="540" r="62" fill="#FFFDF7" stroke="#C9B98F" stroke-width="4"/>' +
+        '<circle cx="500" cy="540" r="46" fill="#C29B38"/><circle cx="500" cy="540" r="34" fill="#A6387E" fill-opacity=".55"/>' +
+        '<path d="M500 494v92M454 540h92M467 507l66 66M533 507l-66 66" stroke="#F6F1E4" stroke-width="4"/>' +
+        '<g transform="rotate(5 700 390)"><rect x="616" y="250" width="168" height="300" rx="28" fill="#16324F"/><rect x="628" y="274" width="144" height="250" rx="14" fill="#FFFDF7"/>' +
+        '<rect x="640" y="300" width="96" height="10" rx="5" fill="#9AA6B8"/><rect x="640" y="320" width="64" height="10" rx="5" fill="#9AA6B8"/>' +
+        '<rect x="660" y="430" width="100" height="42" rx="21" fill="#2A9D8F"/>' +
+        '<text x="710" y="458" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFDF7">kitchen</text></g>' +
+        '<image href="' + LANE_ART.CREST_PARENT + '" x="870" y="116" width="260" height="234"/>' +
+        '<text x="1000" y="430" text-anchor="middle" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#7A5E17" letter-spacing="4">THU · 4:12 P.M.</text>';
     },
     trackgate: function(){
       var grid = '';
