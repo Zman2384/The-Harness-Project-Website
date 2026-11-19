@@ -38,6 +38,68 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
   };
   var POSTS = [
     {
+      slug: "the-missing-form",
+      title: "The missing form: when a student without parent consent is already in your seat",
+      audience: "educator", date: "2026-11-19", hero: "missingform",
+      heroAlt: "A consent roster on a clipboard over a slate blueprint grid, four rows checked and one highlighted row with no signature, beside three steps: roster, handoff, record, and the Certified Facilitator seal.",
+      excerpt: "A student with no signed consent form is already in the second row. How to run the roster check before the bell, what to say, and what Texas law requires.",
+      hookTime: "TUE · 8:03 A.M.",
+      hook: `
+<p>Your Blue Track session starts in two minutes. Students are filing in, the slides are up, and your co-facilitator hands you the consent roster with one name highlighted in yellow.</p>
+<p>No signed form. And that student is already in the second row, phone face-down, ready to go.</p>
+<blockquote>"My mom said it's fine. She just forgot to sign it. You can text her."</blockquote>
+<p>Twenty-eight students are watching to see what you do. Wave it through and you've broken the promise the school made to every family who signed. Send the student out the wrong way and you've singled out a kid in front of their friends.</p>`,
+      pivot: "The teaching move",
+      body: `
+<p>The teaching move here isn't a judgment call you make in the doorway. It's a routine you run before the bell, the same way every session, so nobody has to improvise in front of the room.</p>
+<h2>Name your Ghosts</h2>
+<ul>
+<li><b>Embarrassment:</b> "Sending them out will humiliate them." Only if you make it public. A quiet, planned handoff takes ten seconds.</li>
+<li><b>Good Faith:</b> "The parent obviously agrees." Maybe. A student's word isn't a parent's signature.</li>
+<li><b>They Need It Most:</b> "This is the kid who needs the lesson." That may be true. The way in is a signed form, not a workaround.</li>
+<li><b>The Clock:</b> "I don't have time to sort this out." That's why the check happens before the bell, not during the lesson.</li>
+</ul>
+<h2>What Texas law requires</h2>
+<p>Texas school districts must get a parent's written consent before a student receives human sexuality instruction. Senate Bill 12 (2025) added this opt-in rule as <a href="https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00012F.htm" target="_blank" rel="noopener">Texas Education Code §28.004(i-2)</a>, starting with the 2025–26 school year.</p>
+<p>The same subsection says the consent request has to go home on its own, not bundled with other permission forms, and at least 14 days before the instruction begins. If you're the one who hears "she never got the form," that timeline is why the school, not you, sends a new one.</p>
+<p>Parents also keep the right to remove their child from any part of human sexuality instruction without discipline, an academic penalty or any other sanction, as <a href="https://tea.texas.gov/taa-letters/updated-guidance-parental-opt-requirement" target="_blank" rel="noopener">TEA has reminded districts</a>. TEA's guidance also calls for written consent before instruction on preventing child abuse, family violence, dating violence and sex trafficking. Know which of your lessons fall under which form.</p>
+<div class="callout"><p style="margin:0"><b>The standard:</b> no signed form on file, no seat in the session. CAPE holds every track to this, whatever a district calls the lesson. A student's promise or a hallway "my mom's fine with it" doesn't count. Follow your district's consent process to the letter.</p></div>
+<h2>The roster check, before the bell</h2>
+<ol>
+<li><b>Get the roster early.</b> Ask your site contact for the consent list the day before, not at the door.</li>
+<li><b>Set the alternative first.</b> The alternative assignment and a supervised place to do it are arranged with the school before the session. Never invent them on the spot.</li>
+<li><b>Two adults, two jobs.</b> One facilitator opens the room. The other runs the handoff. It's one more reason every CAPE session has two adults present.</li>
+<li><b>Hand off quietly.</b> Catch the student at the door or call them over one-on-one. Never read names to the class.</li>
+<li><b>Write it down.</b> The date, the student, what happened and who you told. Facts only.</li>
+</ol>
+<h2>What to say, word for word</h2>
+<div class="callout"><p style="margin:0"><b>The script:</b> "Hey, I don't have your form yet, so today you're with [staff name] on the alternative assignment. It's not a punishment. Bring the signed form back and you're in next session."</p></div>
+<p>Say it at a normal volume, one-on-one, and keep moving. The calmer you are, the less anyone else notices.</p>
+<p>If the student pushes back with "My mom said it's fine," don't argue, and don't text the parent from your own phone. Contact with families goes through the school.</p>
+<blockquote>"I believe you. I still need the signed form. Here's a fresh copy to take home."</blockquote>
+<h2>Say this, not that</h2>
+<ul>
+<li>Not "Who doesn't have a form?" to the whole class. Say it one-on-one at the door.</li>
+<li>Not "Just stay, we'll sort it out later." Say "Bring it back and you're in next session."</li>
+<li>Not "You're missing the good stuff." Say "It's not a punishment."</li>
+<li>Not a call or text to the parent yourself. Say "I'll let the office know you need a new copy."</li>
+</ul>
+<h2>After the session</h2>
+<ul>
+<li><b>Tell your site contact</b> which students still need a form, so the school can follow up with families through its own channels.</li>
+<li><b>Keep the reason private.</b> Families decide for many reasons, and every one of them is theirs. Don't discuss who sat out with other students or staff who don't need to know.</li>
+<li><b>Keep the alternative real.</b> It should be meaningful work, graded fairly, with no penalty for the student.</li>
+<li><b>Watch the pattern.</b> If several students show up without forms, flag it. The consent process may need a fix, not the students.</li>
+</ul>
+<h2>Why fidelity starts at the door</h2>
+<p>Seating one student without a signed form breaks trust with every family that did sign. That's how programs leave buildings. A quiet, consistent roster check keeps the student's dignity, the family's choice and the program's place in the school, all at once.</p>
+<p><i>This is educational guidance, not legal advice. Follow your district's consent process, your site agreement and your certification training.</i></p>`,
+      takeaway: "No signed form, no seat: run the roster before the bell and hand off quietly, every time.",
+      closing: `<p>The roster check takes two minutes before the bell. Run it the same way every session, with the alternative ready and one adult on the handoff, and the moment stops being a moment. The student keeps their dignity, and the family keeps their choice.</p>`,
+      reflect: "Where does the roster check happen in your pre-session routine right now, and who owns the handoff?",
+      reflectNote: "Walk through the handoff with your co-facilitator and site contact before your next session."
+    },
+    {
       slug: "the-1am-plan",
       title: "The 1 a.m. Plan: Protection That Still Works After Midnight",
       audience: "adult", date: "2026-11-18", hero: "oneamplan",
@@ -1064,6 +1126,34 @@ if (/^#\//.test(location.hash)) { location.replace(location.hash.slice(1)); }
     return g;
   }
   var HEROES = {
+    missingform: function(){
+      var grid = '';
+      for (var x=0;x<=1200;x+=30) grid += '<line x1="'+x+'" y1="0" x2="'+x+'" y2="675" stroke="#2E3B4A" stroke-opacity=".10" stroke-width="1"/>';
+      for (var y=0;y<=675;y+=30) grid += '<line x1="0" y1="'+y+'" x2="1200" y2="'+y+'" stroke="#2E3B4A" stroke-opacity=".10" stroke-width="1"/>';
+      var rows = '', i;
+      for (i=0;i<5;i++){ var ry = 330 + i*52, miss = i === 2;
+        if (miss) rows += '<rect x="132" y="'+(ry-30)+'" width="396" height="44" fill="#FFC93C" fill-opacity=".55"/>';
+        rows += '<rect x="148" y="'+(ry-22)+'" width="28" height="28" rx="3" fill="none" stroke="#2E3B4A" stroke-width="3"/>' +
+          (miss ? '<text x="162" y="'+(ry-1)+'" text-anchor="middle" font-family="Space Mono, monospace" font-size="22" font-weight="700" fill="#7C5F1C">?</text>'
+                : '<path d="M153 '+(ry-9)+' l7 8 13-15" fill="none" stroke="#2E3B4A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>') +
+          '<rect x="196" y="'+(ry-14)+'" width="'+(miss ? 150 : 120 + (i%2)*40)+'" height="10" rx="5" fill="#4A5767" fill-opacity=".55"/>' +
+          (miss ? '<text x="380" y="'+(ry-2)+'" font-family="Space Mono, monospace" font-size="17" font-weight="700" fill="#7C5F1C" letter-spacing="2">NO FORM</text>'
+                : '<path d="M400 '+(ry-6)+' q14 -14 28 0 t28 0 t28 0" fill="none" stroke="#2E3B4A" stroke-width="3" stroke-linecap="round"/>');
+      }
+      var steps = ["ROSTER","HANDOFF","RECORD"], g = '';
+      steps.forEach(function(s,k){ var sy = 300 + k*92;
+        g += '<rect x="640" y="'+(sy-40)+'" width="300" height="66" rx="4" fill="#F4F6F8" stroke="#2E3B4A" stroke-width="2"/>' +
+             '<rect x="640" y="'+(sy-40)+'" width="66" height="66" fill="'+(k===0?'#A8822C':'#2E3B4A')+'"/>' +
+             '<text x="673" y="'+(sy+5)+'" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="40" fill="#F4F6F8">'+(k+1)+'</text>' +
+             '<text x="730" y="'+(sy+3)+'" font-family="Space Mono, monospace" font-size="24" font-weight="700" fill="#1C2631" letter-spacing="2">'+s+'</text>'; });
+      return '<rect width="1200" height="675" fill="#E7EBEF"/>' + grid +
+        '<text x="110" y="140" font-family="Bebas Neue, Impact, sans-serif" font-size="84" fill="#1C2631">THE MISSING FORM</text>' +
+        '<text x="112" y="186" font-family="Space Mono, monospace" font-size="20" font-weight="700" fill="#7C5F1C" letter-spacing="4">NO SIGNED FORM · NO SEAT</text>' +
+        '<rect x="110" y="240" width="440" height="370" rx="8" fill="#F4F6F8" stroke="#2E3B4A" stroke-width="4"/>' +
+        '<rect x="260" y="222" width="140" height="40" rx="6" fill="#2E3B4A"/>' +
+        '<text x="148" y="290" font-family="Space Mono, monospace" font-size="18" font-weight="700" fill="#4A5767" letter-spacing="3">CONSENT ROSTER</text>' + rows + g +
+        '<image href="' + LANE_ART.SEAL_EDU + '" x="960" y="420" width="170" height="177"/>';
+    },
     oneamplan: function(){
       var tiles = [["M",true],["A",true],["T",false],["C",true],["H",true]], g = '';
       tiles.forEach(function(t,i){ var x = 100 + i*96;
